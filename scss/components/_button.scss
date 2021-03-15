@@ -1,0 +1,24 @@
+button {
+  outline: none;
+  box-shadow: none;
+
+  &:active,
+  &:hover {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+%btn {
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 0;
+}

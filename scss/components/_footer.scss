@@ -1,0 +1,10 @@
+.footer {
+  text-align: center;
+  color: white;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  &--bg-blue {
+    background: $blue1;
+  }
+}

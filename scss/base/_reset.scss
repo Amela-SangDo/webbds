@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "KozGoPr6N";
+    src: url("../../fonts/KozGo/KozGoPr6N-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "KozGoPr6N";
+    src: url("../../fonts/KozGo/KozGoPr6N-Regular.otf");
+    font-weight: 500;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "KozGoPr6N", Arial, Helvetica, sans-serif;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: initial;
+    margin-bottom: 0;
+    font-style: initial;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+pre {
+    font-size: 1rem !important;
+    font-family: "NotoSansJP", sans-serif !important;
+    word-wrap: break-word !important;
+    white-space: pre-line;
+}
+
+p {
+    font-size: 1rem !important;
+}
