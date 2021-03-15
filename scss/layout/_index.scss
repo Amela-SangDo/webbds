@@ -1,0 +1,43 @@
+
+.hp-news{
+    &__link{
+        display: block;
+        font-size: 16px;
+        color: $black;
+        padding: 10px 0;
+        &:hover{
+            color: $yellow1;
+        }
+    }
+    >li:not(:last-child){
+        border-bottom: 1px solid $grey1;
+    }
+}
+.big-news{
+    .info {}
+    &__title{
+        color: $black;
+        &:hover{
+            color: $yellow1;
+        }
+    }
+    
+}
+.datetime{
+    color: $grey3;
+}
+.icon-15{
+    height: 15px;
+}
+.banner{
+    &--thumb{
+        height: 400px;
+    }
+}
+.nav-tabs.hp{
+    border-bottom: none;
+}
+.nav-tabs.hp .nav-link{
+    font-size: 20px;
+    font-weight: bold;
+}

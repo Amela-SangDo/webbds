@@ -1,3 +1,87 @@
-.header {
-  background: $black2;
+.pc-header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid $grey1;
+    background: #fff;
+    z-index: 9999;
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+    }
+    &--pd{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+.pc-menu{
+    display: flex;
+    flex-wrap: wrap;
+    &__link{
+        display: inline-block;
+        color: $black;
+        font-weight: bold;
+        padding: 5px 10px;
+        &:hover{
+            color: $yellow1
+        }
+    }
+    >li{
+        position: relative;
+        &:hover{
+            .sub-menu{
+                display: block;
+            }
+            .pc-menu__link{
+                color: $yellow1;
+            }
+        }
+    }
+}
+.sub-menu{
+    position: absolute;
+    width: 240px;
+    display: none;
+    left: 12px;
+    top: 100%;
+    zoom: 1;
+    background: #fff;
+    box-shadow: 0 3px 6px #032c473d;
+    border-radius: 8px;
+    padding: 8px 0;
+    &__link{
+        display: block;
+        padding: 5px 10px;
+        color: $black;
+        &:hover{
+            color: $yellow1
+        }
+    }
+}
+.logo .image{
+    max-width: 120px;
+    display: block;
+    padding-right: 15px;
+}
+
+.login{
+    &__link{
+        padding-right: 15px;
+        color: $black;
+        &:not(:first-child){
+            padding-left: 15px;
+            border-left: 1px solid;
+        }
+    }
+}
+.post-news{
+    display: inline-block;
+    border: 1px solid $grey1;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-weight: bold;
 }
