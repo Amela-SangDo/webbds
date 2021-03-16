@@ -1,0 +1,27 @@
+.slick-next,
+.slick-prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 4px 4px #00000044;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    @media (max-width: 575px) {
+        height: 30px;
+        width: 30px;
+    }
+}
+.slick-prev{
+    left: -10px;
+}
+.slick-next{
+ right: -10px;
+}
+.slick-disabled{    
+    opacity: 0.7;
+    cursor: not-allowed;
+}
