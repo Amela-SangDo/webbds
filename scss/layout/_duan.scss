@@ -1,4 +1,4 @@
-.duan{
+.duan {
 	.left {
 		a {
 			border: 1px solid $grey1;
@@ -34,11 +34,12 @@
 		}
 	}
 	.item {
+		position: relative;
 		border: 1px solid $grey1;
 		min-height: 172px;
 		border-radius: 6px;
 		.thumbnail{
-			max-width: 224px;
+			width: 280px;
 			img {
 				width: 100%;
 				height: 100%;
@@ -46,9 +47,61 @@
 				border-radius: 6px;
 			}
 		}
+		.information {
+			width: calc(100% - 280px);
+		}
 		.p-info {
 			justify-content: flex-start;
 			align-items: center;
+		}
+		.favorite {
+			height: 30px;
+			width: 30px;
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.time {
+			display: flex;
+			align-items: center;
+		}
+		.labeltime {
+			position: relative;
+			&:hover .time-tl{
+				display: block;
+			}
+			.time-tl {
+				display: none;
+				position: absolute;
+				background: $yellow_active;
+				color: $black1;
+				width: 120px;
+			  	text-align: center;
+			  	border-radius: 6px;
+			  	position: absolute;
+			  	z-index: 1;
+			  	&::after {
+				  	content: " ";
+				  	position: absolute;
+				  	top: -25%;
+				  	left: 50%;
+				  	margin-left: -5px;
+				  	border-width: 5px;
+				  	border-style: solid;
+				  	border-color: transparent transparent $yellow_active transparent;
+				}
+			}
+		}
+	}
+	.badge {
+		border-radius: 20px;
+		cursor: pointer;
+		&:hover {
+			background-color: $yellow_active;
 		}
 	}
 }
