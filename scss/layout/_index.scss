@@ -1,3 +1,149 @@
-.color-red {
-    color: red;
+.hp-news {
+    &__link {
+        display: block;
+        font-size: 16px;
+        color: $black;
+        padding: 10px 0;
+        &:hover {
+            color: $yellow1;
+        }
+    }
+    >li:not(:last-child) {
+        border-bottom: 1px solid $grey1;
+    }
+}
+
+.big-news {
+    .info {}
+    &__title {
+        color: $black;
+        &:hover {
+            color: $yellow1;
+        }
+    }
+}
+
+.datetime {
+    color: $grey3;
+}
+
+.icon-15 {
+    height: 15px;
+}
+
+.banner {
+    &--thumb {
+        height: 400px;
+    }
+}
+
+.nav-tabs.hp {
+    border-bottom: none;
+    .nav-link {
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        color: $black;
+        &.active {
+            border-bottom: 3px solid $yellow1;
+        }
+    }
+}
+
+.tab-content.hp {
+    padding-top: 20px;
+}
+
+.panel-head {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 3px;
+        width: 120px;
+        background: $yellow1;
+        transform: translateX(-50%);
+    }
+}
+
+.hp-3 {
+    &__item {
+        position: relative;
+    }
+    &__thumb {
+        position: relative;
+        height: 180px;
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        &.h-360 {
+            height: 370px;
+        }
+    }
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        h3,
+        a {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+    }
+    &__info-link {
+        padding: 20px;
+    }
+}
+
+.place-name {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: capitalize;
+    display: block;
+}
+
+.place-number {
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+}
+
+.hp-pb-40 {
+    padding-bottom: 40px;
+}
+
+.top-footer {
+    background: $grey1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    &__link {
+        display: block;
+        color: $black1;
+        padding-bottom: 5px;
+        &:hover {
+            color: $yellow1;
+        }
+    }
 }

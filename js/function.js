@@ -9,8 +9,15 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
-(function () {
-  $(document).ready(function () {
-    
+
+
+$(document).ready(function(){
+  $('.your-class').slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    variableWidth: true
   });
-})();
+})
+	
