@@ -3,8 +3,8 @@ $white: #FFFFFF;
 $black: #333333;
 $black1: #3B4043;
 $black2: #707070;
-$blue1: #02408A;
 $blue2: #0075FF;
+$blue1: #0075FF;
 $red: #D7162E;
 $red1: #FF0000;
 $red2: #FF2424;
@@ -15,7 +15,26 @@ $yellow2: #ffcc00;
 $grey1: #CDD6DD;
 $grey2: #CCCCCC;
 $grey3: #777777;
+$yellow_active: #a177184d;
+$grey1: #CDD6DD;
+$grey2: #CCCCCC;
+$primaries: #02408A;
 
 .color-black{
     color: $black
+}
+.bg-grey1 {
+	background-color: $grey1;
+}
+.color-grey1 {
+	color: $grey1;
+}
+.color-grey2 {
+	color: $grey2;
+}
+.color-yellow_active {
+	color: $yellow_active;
+}
+.color-yellow1 {
+	color: $yellow1;
 }
