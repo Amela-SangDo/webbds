@@ -8,7 +8,6 @@
 .form-check__label {
   font-weight: 400;
   line-height: 24px;
-  color: $dark;
   cursor: pointer;
   padding-left: 10px;
 }
@@ -27,7 +26,6 @@
 }
 .form-check__label::after {
   content: "\f00c";
-  @include rfs(10px);
   position: absolute;
   display: block;
   top: 0;
