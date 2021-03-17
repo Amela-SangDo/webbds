@@ -4,6 +4,9 @@
 .color-black1 {
   color: #3B4043; }
 
+.color-black2 {
+  color: #707070; }
+
 .bg-grey1 {
   background-color: #CDD6DD; }
 
@@ -10895,6 +10898,10 @@ button {
   margin-left: -5px !important;
   margin-right: -5px !important; }
 
+.mlr--1 {
+  margin-left: -1px !important;
+  margin-right: -1px !important; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -10965,6 +10972,34 @@ button {
     border: none;
     outline: none;
     box-shadow: none; }
+
+.slick-next,
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 4px 4px #00000044;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer; }
+  @media (max-width: 575px) {
+    .slick-next,
+    .slick-prev {
+      height: 30px;
+      width: 30px; } }
+
+.slick-prev {
+  left: -10px; }
+
+.slick-next {
+  right: -10px; }
+
+.slick-disabled {
+  opacity: 0.7;
+  cursor: not-allowed; }
 
 .pc-header {
   position: sticky;
@@ -11163,7 +11198,9 @@ button {
   height: 400px; }
 
 .nav-tabs.hp {
-  border-bottom: none; }
+  border-bottom: none;
+  min-width: 500px;
+  overflow-y: hidden; }
   .nav-tabs.hp .nav-link {
     font-size: 20px;
     font-weight: bold;
@@ -11177,18 +11214,19 @@ button {
 
 .panel-head {
   position: relative;
+  font-size: 28px;
+  font-weight: bold;
   padding-bottom: 15px;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
   .panel-head::before {
     content: "";
     display: block;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 0;
     height: 3px;
     width: 120px;
-    background: #a17718;
-    transform: translateX(-50%); }
+    background: #a17718; }
 
 .hp-3__item {
   position: relative; }
@@ -11196,6 +11234,9 @@ button {
 .hp-3__thumb {
   position: relative;
   height: 180px; }
+  @media (max-width: 575px) {
+    .hp-3__thumb {
+      height: auto; } }
   .hp-3__thumb::before {
     position: absolute;
     content: "";
@@ -11207,6 +11248,9 @@ button {
     z-index: 1; }
   .hp-3__thumb.h-360 {
     height: 370px; }
+    @media (max-width: 575px) {
+      .hp-3__thumb.h-360 {
+        height: auto; } }
 
 .hp-3__info {
   position: absolute;
@@ -11227,12 +11271,12 @@ button {
 .place-name {
   color: #ffffff;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 22px;
   text-transform: capitalize;
   display: block; }
 
 .place-number {
-  font-size: 18px;
+  font-size: 14px;
   color: #ffffff;
   display: block; }
 
@@ -11253,6 +11297,89 @@ button {
     padding-bottom: 5px; }
     .top-footer__link:hover {
       color: #a17718; }
+
+.tags-slide {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .tags-slide__link {
+    display: inline-block;
+    margin-right: 11px;
+    background: #ececec;
+    border-radius: 5px;
+    padding: 8px 14px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 10px; }
+
+.adv-image {
+  display: block;
+  height: 220px; }
+
+.hp-highlights {
+  position: relative; }
+  .hp-highlights__item {
+    display: block;
+    padding: 2%; }
+    .hp-highlights__item:hover .hp-highlights__info {
+      color: #a17718; }
+  .hp-highlights__thumb {
+    margin-bottom: 15px; }
+  .hp-highlights__info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333; }
+    .hp-highlights__info:hover {
+      color: #a17718; }
+
+.viewMore {
+  display: inline-block;
+  color: #4a7eb7; }
+
+.hp-hotnews__item:hover .hp-hotnews__link {
+  color: #a17718; }
+
+.hp-hotnews__info {
+  display: flex;
+  align-items: center; }
+
+.hp-hotnews__number {
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #a17718;
+  display: inline-block;
+  margin-right: 10px; }
+
+.hp-hotnews__link {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333; }
+
+.home-utility__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  height: 100%;
+  min-height: 85px;
+  margin-bottom: 1px; }
+  .home-utility__item:hover {
+    color: #ffffff;
+    background: #a17718; }
+
+.color-1 {
+  background: #7ac6ea; }
+
+.color-2 {
+  background: #50a9d3; }
+
+.color-3 {
+  background: #4a7eb7; }
+
+.color-4 {
+  background: #2668a2; }
 
 .duan .left a {
   border: 1px solid #CDD6DD;
@@ -11343,3 +11470,105 @@ button {
   width: 100%;
   height: auto;
   object-fit: cover; }
+
+.slider-nav {
+  display: none; }
+  .slider-nav div {
+    display: inline-block;
+    width: 110px;
+    height: 80px;
+    text-align: center;
+    cursor: pointer; }
+
+.title-da:hover,
+.title:hover {
+  color: #a17718; }
+
+.ct-infor,
+.b-infor {
+  border-bottom: 1px solid #CDD6DD;
+  border-top: 1px solid #CDD6DD; }
+  .ct-infor .left,
+  .b-infor .left {
+    width: 60%; }
+    .ct-infor .left .item-info,
+    .b-infor .left .item-info {
+      flex-wrap: wrap;
+      align-items: center; }
+      .ct-infor .left .item-info span,
+      .b-infor .left .item-info span {
+        display: block;
+        width: 100%; }
+  .ct-infor .right,
+  .b-infor .right {
+    width: 40%;
+    margin-left: auto;
+    justify-content: flex-end; }
+    .ct-infor .right div,
+    .b-infor .right div {
+      align-items: center; }
+    .ct-infor .right .action,
+    .b-infor .right .action {
+      cursor: pointer; }
+
+.b-infor .left {
+  width: 80%; }
+
+.user .avatar {
+  justify-content: center;
+  align-items: center; }
+  .user .avatar span {
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: #CCCCCC; }
+
+.user .name {
+  justify-content: center;
+  align-items: center; }
+
+.user .btn {
+  width: 100%; }
+
+.duan-lienquan .item .information {
+  width: 100%; }
+  .duan-lienquan .item .information .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-word; }
+
+.duan-lienquan .item a {
+  display: block; }
+
+.item {
+  position: relative;
+  min-height: unset !important;
+  margin: 2%; }
+  .item .thumbnail {
+    width: 100% !important; }
+    .item .thumbnail img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
+
+.favorite {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
+  .favorite img {
+    width: 100%;
+    height: auto; }
+
+.relation,
+.seen {
+  border-bottom: 1px solid #CDD6DD; }
+
+.h-200 {
+  height: 200px; }
