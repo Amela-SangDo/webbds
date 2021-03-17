@@ -1,46 +1,52 @@
 // Color
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #333333;
-$black1: #3B4043;
+$black1: #3b4043;
 $black2: #707070;
-$blue2: #0075FF;
-$blue1: #0075FF;
-$red: #D7162E;
-$red1: #FF0000;
-$red2: #FF2424;
-$brown: #6A380E;
-$brown1: #A9927E;
-$yellow1: #a17718;
+$blue2: #0075ff;
+$blue1: #0075ff;
+$red: #d7162e;
+$red1: #ff0000;
+$red2: #ff2424;
+$brown: #6a380e;
+$brown1: #a9927e;
+$yellow1: #5a420c;
 $yellow2: #ffcc00;
-$grey1: #CDD6DD;
-$grey2: #CCCCCC;
+$grey1: #eeeeee;
+$grey2: #cccccc;
 $grey3: #777777;
 $yellow_active: #a177184d;
-$grey1: #CDD6DD;
-$grey2: #CCCCCC;
-$primaries: #02408A;
+$grey1: #cdd6dd;
+$grey2: #cccccc;
+$primaries: #02408a;
+.color-black {
+    color: $black;
+}
 
-.color-black{
-    color: $black
+.color-black1 {
+    color: $black1;
 }
-.color-black1{
-    color: $black1
+
+.color-black2 {
+    color: $black2;
 }
-.color-black2{
-    color: $black2
-}
+
 .bg-grey1 {
-	background-color: $grey1;
+    background-color: $grey1;
 }
+
 .color-grey1 {
-	color: $grey1;
+    color: $grey1;
 }
+
 .color-grey2 {
-	color: $grey2;
+    color: $grey2;
 }
+
 .color-yellow_active {
-	color: $yellow_active;
+    color: $yellow_active;
 }
+
 .color-yellow1 {
-	color: $yellow1;
+    color: $yellow1;
 }

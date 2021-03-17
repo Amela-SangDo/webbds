@@ -55,6 +55,7 @@ $(document).ready(function(){
       }
     ]
   });
+
   $('.hp-hotnews').slick({
     dots: false,
     infinite: false,
@@ -81,6 +82,38 @@ $(document).ready(function(){
         breakpoint: 480,
         settings: {
           slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+  
+  $('.typicalBusiness').slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 6,
+    prevArrow:"<img class='a-left control-c prev slick-prev' src='images/chevron-left.svg'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='images/chevron-right.svg'>",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2
         }
       }
     ]
