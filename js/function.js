@@ -74,7 +74,39 @@ $(document).ready(function(){
     ]
   });
 
-  
+  $('#banner-top').slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    prevArrow: false,
+    nextArrow:false,
+    autoplay: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
   $('.typicalBusiness').slick({
     dots: false,
     infinite: false,
@@ -157,5 +189,17 @@ $(document).ready(function(){
     var mySlideNumber = nextSlide;
     $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
     $('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
+  });
+  $(window).scroll(function() {
+    if ($(this).scrollTop()) {
+      $('#toTop').addClass('fade-in');
+      $('#toTop').removeClass('fade-out')
+    } else {
+      $('#toTop').addClass('fade-in')
+      $('#toTop').addClass('fade-out')
+    }
+  });
+  $("#toTop").click(function() {
+    $("html, body").animate({scrollTop: 0}, 1000);
   });
 })
