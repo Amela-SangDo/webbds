@@ -72,6 +72,9 @@
         width: 120px;
         background: $yellow1;
     }
+    @media (max-width: 575px) {
+        font-size: 24px;
+    }
 }
 
 .hp-3 {
@@ -307,4 +310,33 @@
     font-size: 14px;
     color: #7ac6ea;
     font-weight: normal;
+}
+
+.hp-2 {
+    .item {
+        border: 1px solid $yellow_active;
+        margin-bottom: 20px !important;
+        &:hover {
+            box-shadow: 0 2px 4px #00000014;
+        }
+    }
+}
+
+.heading-25,
+.heading-28 {
+    @media (max-width: 768px) {
+        font-size: 22px;
+    }
+}
+
+.breadcrumb {
+    a {
+        color: black;
+        &:hover {
+            color: #b68310;
+        }
+        &:last-child:hover {
+            color: black;
+        }
+    }
 }

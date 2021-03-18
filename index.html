@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="scss/main.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
@@ -68,7 +68,62 @@
             </div>
         </section>
     </header>
+    <header class="mb-header">
+        <div class="container">
+            <div class="mb-header__flex">
+                <h1 class="logo">
+                    <a href="/" title="" class="image">
+                        <img src="images/logo.svg" alt="" class="img-fluid">
+                    </a>
+                </h1>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <img src="images/cancel.png" alt="" class="cancel">
+                </a>
+                <div class="home-header-menu">
+                    <ul class="mb-menu">
+                        <li><a href="/"><span class="text">Trang chủ</span></a></li>
+                        <li>
+                            <a href="#" class="haslink">
+                                <span class="text">Nhà đất bán</span>
+                                <span class="arrow-down"><img src="/images/caret_down.png" alt=""></span>
+                            </a>
+                            <ul class="mb-sub-menu">
+                                <li><a href="#" class="sub-menu__link">Bán căn hộ chung cư</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán nhà riêng</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán nhà biệt thự, liền kề</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán nhà mặt phố</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán đất nền dự án</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán đất</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán trang trại, khu nghỉ dưỡng</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán kho, nhà xưởng</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán loại bất động sản khác</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="haslink">
+                                <span class="text">Nhà đất cho thuê</span>
+                                <span class="arrow-down"><img src="/images/caret_down.png" alt=""></span>
+                            </a>
 
+                            <ul class="mb-sub-menu">
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê căn hộ chung cư</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê nhà riêng</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê nhà mặt phố</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê nhà trọ, phòng trọ</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê văn phòng</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê cửa hàng - ki ốt</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê kho, nhà xưởng, đất</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê loại bất động sản khác</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <section class="banner hp-pb-40">
         <div class="banner--thumb">
             <img src="images/banner-1.jpg" alt="" class="img-cover">
@@ -492,7 +547,7 @@
             </section>
 
             <section class="hp-4 hp-pb-40">
-                <header class="d-flex justify-content-between align-items-center mb-20">
+                <header class="d-flex flex-wrap justify-content-between align-items-center mb-20">
                     <h2 class="heading-28 mb-10">Dự án nổi bật</h2>
                     <a href="#" class="viewMore mb-10">
                         Xem thêm
@@ -652,7 +707,7 @@
             </section>
 
             <section class="hp-8 hp-pb-40">
-                <header class="d-flex justify-content-between align-items-center mb-20">
+                <header class="d-flex flex-wrap justify-content-between align-items-center mb-20">
                     <h2 class="heading-28 mb-10">Doanh nghiệp tiêu biểu</h2>
                     <a href="#" class="viewMore mb-10">
                       Xem thêm
@@ -727,7 +782,7 @@
             </section>
 
             <section class="hp-9 hp-pb-40">
-                <header class="d-flex justify-content-between align-items-center mb-20">
+                <header class="d-flex flex-wrap justify-content-between align-items-center mb-20">
                     <h2 class="heading-28 mb-10">Báo chí nói về Batdongsan.com.vn</h2>
                     <a href="#" class="viewMore mb-10">
                         Xem thêm
@@ -1038,6 +1093,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/function.js"></script>
 </body>
 

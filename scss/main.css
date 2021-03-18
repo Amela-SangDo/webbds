@@ -11063,6 +11063,105 @@ button {
   padding: 10px 16px;
   font-weight: bold; }
 
+.mb-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #ffffff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px #00000014; }
+  .mb-header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px; }
+
+.sidenav .closebtn {
+  display: block;
+  text-align: right;
+  padding: 0 10px;
+  color: #818181; }
+
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+.sidenav a:hover .arrow-down > img {
+  filter: invert(1); }
+
+.sidenav .closebtn {
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+.cancel {
+  filter: invert(0.6); }
+  .cancel:hover {
+    filter: invert(1); }
+
+.mb-menu {
+  height: calc(100vh - 60px);
+  overflow-y: auto; }
+  .mb-menu > li {
+    position: relative; }
+    .mb-menu > li:not(:last-child) {
+      border-bottom: 0.5px solid #818181; }
+    .mb-menu > li a {
+      padding: 8px 8px 8px 15px;
+      text-decoration: none;
+      color: #818181;
+      transition: 0.3s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px; }
+    .mb-menu > li.active .mb-sub-menu {
+      opacity: 1;
+      visibility: visible;
+      height: auto; }
+  .mb-menu .text {
+    font-size: 16px; }
+
+.mb-sub-menu {
+  position: relative;
+  padding-left: 20px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0; }
+
+.arrow-down > img {
+  filter: contrast(0.2); }
+
+@media (max-width: 1250px) {
+  header.pc-header {
+    display: none !important; }
+
+  .mb-header {
+    display: block; } }
+@media (min-width: 1250px) {
+  header.pc-header {
+    display: block !important; }
+
+  .mb-header {
+    display: none; } }
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+
+  .sidenav a {
+    font-size: 18px; } }
 .footer {
   background: #5a420c;
   padding: 50px 0; }
@@ -11258,6 +11357,9 @@ button {
     height: 3px;
     width: 120px;
     background: #5a420c; }
+  @media (max-width: 575px) {
+    .panel-head {
+      font-size: 24px; } }
 
 .hp-3__item {
   position: relative; }
@@ -11439,6 +11541,24 @@ button {
   color: #7ac6ea;
   font-weight: normal; }
 
+.hp-2 .item {
+  border: 1px solid #a177184d;
+  margin-bottom: 20px !important; }
+  .hp-2 .item:hover {
+    box-shadow: 0 2px 4px #00000014; }
+
+@media (max-width: 768px) {
+  .heading-25,
+  .heading-28 {
+    font-size: 22px; } }
+
+.breadcrumb a {
+  color: black; }
+  .breadcrumb a:hover {
+    color: #b68310; }
+  .breadcrumb a:last-child:hover {
+    color: black; }
+
 .duan .left a {
   border: 1px solid #cdd6dd;
   color: #333333; }
@@ -11467,15 +11587,11 @@ button {
   border: 1px solid #cdd6dd;
   min-height: 172px;
   border-radius: 6px; }
-  .duan .item .thumbnail {
-    width: 280px; }
-    .duan .item .thumbnail img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 6px; }
-  .duan .item .information {
-    width: calc(100% - 280px); }
+  .duan .item .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px; }
   .duan .item .p-info {
     justify-content: flex-start;
     align-items: center; }
@@ -11490,9 +11606,11 @@ button {
       height: auto; }
   .duan .item .time {
     display: flex;
+    flex-wrap: wrap !important;
     align-items: center; }
   .duan .item .labeltime {
-    position: relative; }
+    position: relative;
+    display: block; }
     .duan .item .labeltime:hover .time-tl {
       display: block; }
     .duan .item .labeltime .time-tl {
@@ -11520,41 +11638,112 @@ button {
   .duan .badge:hover {
     background-color: #a177184d; }
 
-.slider-for img {
-  width: 100%;
-  height: auto;
-  object-fit: cover; }
+.danh-sach-du-an .item {
+  margin: 0; }
+
+@media (max-width: 575px) {
+  .danh-sach-du-an .item .col-sm-4 {
+    margin-bottom: 15px; } }
+.slider-for {
+  margin-bottom: 10px; }
+  .slider-for .slick-slide {
+    height: 500px; }
+    @media (max-width: 768px) {
+      .slider-for .slick-slide {
+        height: 350px; } }
 
 .slider-nav {
-  display: none; }
+  margin: 0 -5px; }
   .slider-nav div {
     display: inline-block;
-    width: 110px;
-    height: 80px;
-    text-align: center;
     cursor: pointer; }
+  .slider-nav .slick-slide {
+    height: 100px;
+    padding: 0 5px; }
 
-.title-da:hover {
+.title-da:hover,
+.title:hover {
   color: #5a420c; }
 
-.ct-infor {
+.ct-infor,
+.b-infor {
   border-bottom: 1px solid #cdd6dd;
   border-top: 1px solid #cdd6dd; }
-  .ct-infor .left {
-    width: 60%; }
-    .ct-infor .left .item-info {
-      flex-wrap: wrap;
-      align-items: center; }
-      .ct-infor .left .item-info span {
-        display: block;
-        width: 100%; }
-  .ct-infor .right {
-    width: 40%;
+  .ct-infor .left .item-info,
+  .b-infor .left .item-info {
+    flex-wrap: wrap;
+    align-items: center; }
+    @media (max-width: 575px) {
+      .ct-infor .left .item-info,
+      .b-infor .left .item-info {
+        display: flex;
+        flex-wrap: nowrap; } }
+    .ct-infor .left .item-info span,
+    .b-infor .left .item-info span {
+      display: block; }
+  .ct-infor .right,
+  .b-infor .right {
     margin-left: auto;
     justify-content: flex-end; }
-    .ct-infor .right div {
+    .ct-infor .right div,
+    .b-infor .right div {
       align-items: center; }
-    .ct-infor .right .action {
+    .ct-infor .right .action,
+    .b-infor .right .action {
       cursor: pointer; }
+
+.user .avatar {
+  justify-content: center;
+  align-items: center; }
+  .user .avatar span {
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: #cccccc; }
+.user .name {
+  justify-content: center;
+  align-items: center; }
+.user .btn {
+  width: 100%; }
+
+.duan-lienquan .item .information {
+  width: 100%; }
+  .duan-lienquan .item .information .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-word; }
+.duan-lienquan .item a {
+  display: block; }
+
+.item {
+  position: relative;
+  min-height: unset !important;
+  margin: 2%; }
+  .item .thumbnail img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; }
+
+.favorite {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
+  .favorite img {
+    width: 100%;
+    height: auto; }
+
+.relation,
+.seen {
+  border-bottom: 1px solid #cdd6dd; }
+
+.h-200 {
+  height: 200px; }
 
 /*# sourceMappingURL=main.css.map */

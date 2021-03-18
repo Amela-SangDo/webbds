@@ -1,48 +1,50 @@
-.pc-header{
+.pc-header {
     position: sticky;
     top: 0;
     width: 100%;
     border-bottom: 1px solid $grey1;
     background: #fff;
     z-index: 9999;
-    &__left{
+    &__left {
         display: flex;
         align-items: center;
     }
-    &__right{
+    &__right {
         display: flex;
         align-items: center;
     }
-    &--pd{
+    &--pd {
         padding-top: 5px;
         padding-bottom: 5px;
     }
 }
-.pc-menu{
+
+.pc-menu {
     display: flex;
     flex-wrap: wrap;
-    &__link{
+    &__link {
         display: inline-block;
         color: $black;
         font-weight: bold;
         padding: 5px 10px;
-        &:hover{
-            color: $yellow1
+        &:hover {
+            color: $yellow1;
         }
     }
-    >li{
+    >li {
         position: relative;
-        &:hover{
-            .sub-menu{
+        &:hover {
+            .sub-menu {
                 display: block;
             }
-            .pc-menu__link{
+            .pc-menu__link {
                 color: $yellow1;
             }
         }
     }
 }
-.sub-menu{
+
+.sub-menu {
     position: absolute;
     width: 240px;
     display: none;
@@ -53,35 +55,163 @@
     box-shadow: 0 3px 6px #032c473d;
     border-radius: 8px;
     padding: 8px 0;
-    &__link{
+    &__link {
         display: block;
         padding: 5px 10px;
         color: $black;
-        &:hover{
-            color: $yellow1
+        &:hover {
+            color: $yellow1;
         }
     }
 }
-.logo .image{
+
+.logo .image {
     max-width: 120px;
     display: block;
     padding-right: 15px;
 }
 
-.login{
-    &__link{
+.login {
+    &__link {
         padding-right: 15px;
         color: $black;
-        &:not(:first-child){
+        &:not(:first-child) {
             padding-left: 15px;
             border-left: 1px solid;
         }
     }
 }
-.post-news{
+
+.post-news {
     display: inline-block;
     border: 1px solid $grey1;
     border-radius: 4px;
     padding: 10px 16px;
     font-weight: bold;
+}
+
+// mobile header
+.mb-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px #00000014;
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+
+.sidenav .closebtn {
+    display: block;
+    text-align: right;
+    padding: 0 10px;
+    color: #818181;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav a:hover .arrow-down>img {
+    filter: invert(1);
+}
+
+.sidenav .closebtn {
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.cancel {
+    filter: invert(0.6);
+    &:hover {
+        filter: invert(1);
+    }
+}
+
+.mb-menu {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    >li {
+        position: relative;
+        &:not(:last-child) {
+            border-bottom: 0.5px solid #818181;
+        }
+        a {
+            padding: 8px 8px 8px 15px;
+            text-decoration: none;
+            color: #818181;
+            transition: 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+        &.active .mb-sub-menu {
+            opacity: 1;
+            visibility: visible;
+            height: auto;
+        }
+    }
+    .text {
+        font-size: 16px;
+    }
+}
+
+.mb-sub-menu {
+    position: relative;
+    padding-left: 20px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+
+.arrow-down>img {
+    filter: contrast(0.2);
+}
+
+@media (max-width: 1250px) {
+    header.pc-header {
+        display: none !important;
+    }
+    .mb-header {
+        display: block;
+    }
+}
+
+@media (min-width: 1250px) {
+    header.pc-header {
+        display: block !important;
+    }
+    .mb-header {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
