@@ -1,125 +1,132 @@
 .slider-for {
-	img {
-		width: 100%;
-		height: auto;
-		object-fit: cover;
-	}
-}
-.slider-nav {
-	display: none;
-	div {
-		display:inline-block;
-	  	width: 110px;
-	  	height: 80px;
-	  	text-align: center;
-	  	cursor: pointer;
-	}
-}
-.title-da,
-.title {
-	&:hover {
-		color: $yellow1;
-	}
-}
-.ct-infor,
-.b-infor {
-	border-bottom: 1px solid $grey1;
-	border-top: 1px solid $grey1;
-	.left {
-		width: 60%;
-		.item-info {
-			flex-wrap: wrap;
-			align-items: center;
-			span {
-				display: block;
-				width: 100%;
-			}
-		}
-	}
-	.right {
-		width: 40%;
-		margin-left: auto;
-		justify-content: flex-end;
-		div {
-			align-items: center;
-		}
-		.action {
-			cursor: pointer;
-		}
-	}
-}
-.b-infor {
-	.left {
-		width: 80%;
-	}
-}
-.user {
-	.avatar {
-		justify-content: center;
-		align-items: center;
-		span {
-			height: 68px;
-			width: 68px;
-			border-radius: 50%;
-			align-items: center;
-			justify-content: center;
-			background: $grey2;
-		}
-	}
-	.name {
-		justify-content: center;
-		align-items: center;
-	}
-	.btn {
-		width: 100%;
-	}
-}
-.duan-lienquan {
-	.item {
-		.information {
-			width: 100%;
-			.title {
-				overflow: hidden;
-				text-overflow: ellipsis;
-				display: -webkit-box;
-				-webkit-box-orient: vertical;
-				-webkit-line-clamp: 2;
-				word-break: break-word;
-			}
-		}
-		a {
-			display: block;
-		}
-	}
-}
-.item {
-	position: relative;
-	min-height: unset !important;
-	margin: 2%;
-	.thumbnail {
-		img {
-			width: 100%;
-			height: auto;
-			object-fit: cover;
-		}
-	}
-}
-.favorite {
-	height: 30px;
-	width: 30px;
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
-	img {
-		width: 100%;
-		height: auto;
-	}
-}
-.relation,
-.seen {
-	border-bottom: 1px solid $grey1;
-}
-.h-200 {
-	height: 200px;
+    margin-bottom: 10px;
+    .slick-slide {
+        height: 500px;
+        @media (max-width: 768px) {
+            height: 350px;
+        }
+    }
 }
 
+.slider-nav {
+    div {
+        display: inline-block;
+        cursor: pointer;
+    }
+    margin: 0 -5px;
+    .slick-slide {
+        height: 100px;
+        padding: 0 5px;
+    }
+}
+
+.title-da,
+.title {
+    &:hover {
+        color: $yellow1;
+    }
+}
+
+.ct-infor,
+.b-infor {
+    border-bottom: 1px solid $grey1;
+    border-top: 1px solid $grey1;
+    .left {
+        .item-info {
+            flex-wrap: wrap;
+            align-items: center;
+            @media (max-width: 575px) {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+    .right {
+        margin-left: auto;
+        justify-content: flex-end;
+        div {
+            align-items: center;
+        }
+        .action {
+            cursor: pointer;
+        }
+    }
+}
+
+.user {
+    .avatar {
+        justify-content: center;
+        align-items: center;
+        span {
+            height: 68px;
+            width: 68px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            background: $grey2;
+        }
+    }
+    .name {
+        justify-content: center;
+        align-items: center;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+.duan-lienquan {
+    .item {
+        .information {
+            width: 100%;
+            .title {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                word-break: break-word;
+            }
+        }
+        a {
+            display: block;
+        }
+    }
+}
+
+.item {
+    position: relative;
+    min-height: unset !important;
+    margin: 2%;
+    .thumbnail {
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
+
+.favorite {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.relation,
+.seen {
+    border-bottom: 1px solid $grey1;
+}
+
+.h-200 {
+    height: 200px;
+}
