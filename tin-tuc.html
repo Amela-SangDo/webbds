@@ -1,0 +1,553 @@
+<html>
+
+<head>
+    <title>Tin tức</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web bat dong san">
+    <meta name="author" content="batdongsan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+
+<body>
+    <header class="pc-header pc-header--pd">
+        <section class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="pc-header__left">
+                    <h1 class="logo">
+                        <a href="/" title="" class="image">
+                            <img src="images/logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </h1>
+                    <ul class="pc-menu">
+                        <li>
+                            <a href="#" title="" class="pc-menu__link">Nhà đất bán</a>
+                            <ul class="sub-menu">
+                                <li><a href="/du-an.html" class="sub-menu__link">Bán căn hộ chung cư</a></li>
+                                <li><a href="/ban-nha-rieng" class="sub-menu__link">Bán nhà riêng</a></li>
+                                <li><a href="/ban-nha-biet-thu-lien-ke" class="sub-menu__link">Bán nhà biệt thự, liền kề</a></li>
+                                <li><a href="/ban-nha-mat-pho" class="sub-menu__link">Bán nhà mặt phố</a></li>
+                                <li><a href="/ban-dat-nen-du-an" class="sub-menu__link">Bán đất nền dự án</a></li>
+                                <li><a href="/ban-dat" class="sub-menu__link">Bán đất</a></li>
+                                <li><a href="/ban-trang-trai-khu-nghi-duong" class="sub-menu__link">Bán trang trại, khu nghỉ dưỡng</a></li>
+                                <li><a href="/ban-kho-nha-xuong" class="sub-menu__link">Bán kho, nhà xưởng</a></li>
+                                <li><a href="/ban-loai-bat-dong-san-khac" class="sub-menu__link">Bán loại bất động sản khác</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="pc-menu__link">Nhà đất cho thuê </a>
+                            <ul class="sub-menu">
+                                <li><a href="/ban-can-ho-chung-cu" class="sub-menu__link">Bán căn hộ chung cư</a></li>
+                                <li><a href="/ban-nha-rieng" class="sub-menu__link">Bán nhà riêng</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#" title="" class="pc-menu__link">Dự án</a> </li>
+                        <li> <a href="#" title="" class="pc-menu__link">Cần mua - cần thuê</a> </li>
+                        <li> <a href="/tin-tuc.html" title="" class="pc-menu__link">Tin tức</a> </li>
+                        <li> <a href="#" title="" class="pc-menu__link">Nội - ngoại thất</a> </li>
+                        <li> <a href="#" title="" class="pc-menu__link">Phong thủy</a> </li>
+                        <li> <a href="#" title="" class="pc-menu__link">Danh bạ</a> </li>
+                    </ul>
+                </div>
+                <div class="pc-header__right">
+                    <div class="login">
+                        <a href="#" title="" class="login__link">Đăng nhập</a>
+                        <a href="#" title="" class="login__link">Đăng ký</a>
+                    </div>
+                    <a href="#" title="" class="post-news">Đăng tin</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <header class="mb-header">
+        <div class="container">
+            <div class="mb-header__flex">
+                <h1 class="logo">
+                    <a href="/" title="" class="image">
+                        <img src="images/logo.svg" alt="" class="img-fluid">
+                    </a>
+                </h1>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <img src="images/cancel.png" alt="" class="cancel">
+                </a>
+                <div class="home-header-menu">
+                    <ul class="mb-menu">
+                        <li><a href="/"><span class="text">Trang chủ</span></a></li>
+                        <li>
+                            <a href="#" class="haslink">
+                                <span class="text">Nhà đất bán</span>
+                                <span class="arrow-down"><img src="/images/caret_down.png" alt=""></span>
+                            </a>
+                            <ul class="mb-sub-menu">
+                                <li><a href="#" class="sub-menu__link">Bán căn hộ chung cư</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán nhà riêng</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán nhà biệt thự, liền kề</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán nhà mặt phố</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán đất nền dự án</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán đất</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán trang trại, khu nghỉ dưỡng</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán kho, nhà xưởng</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán loại bất động sản khác</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="haslink">
+                                <span class="text">Nhà đất cho thuê</span>
+                                <span class="arrow-down"><img src="/images/caret_down.png" alt=""></span>
+                            </a>
+
+                            <ul class="mb-sub-menu">
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê căn hộ chung cư</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê nhà riêng</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê nhà mặt phố</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê nhà trọ, phòng trọ</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê văn phòng</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê cửa hàng - ki ốt</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê kho, nhà xưởng, đất</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê loại bất động sản khác</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container duan mt-20 mb-40">
+        <div class="row">
+            <div class="col-lg-8 col-md-7">
+                <div class="breadcrumb">
+                    <a href="#" level="1" title="">trang chủ</a>
+                    <span>/</span>
+                    <a href="#" level="1" title="">Tin tức</a>
+                </div>
+                
+                <section class="bigNews">
+                    <div class="row mlr--5">
+                        <div class="col-sm-4 plr-5">
+                            <div class="bigNews__thumb">
+                                <a href="chi-tiet-tin-tuc.html" title="">
+                                    <img src="images/bds_slider.jpg" alt="" class="img-cover img-thumbnail">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 plr-5">
+                            <div class="bigNews__info">
+                                <h3 class="mb-10"><a href="chi-tiet-tin-tuc.html" title="" class="bigNews__title line-2">Thị trường bất động sản Thủ Dầu Một tăng nhiệt từ quý 1/2021</a></h3>
+                                <div class="bigNews__date">20/03/2021</div>
+                                <div class="bigNews__desc line-4">
+                                    Ngay từ quý 1/2021, thị trường bất động sản Thủ Dầu Một đã trở nên nóng hơn bao giờ hết với sự tăng trưởng không ngừng của cả nguồn cung lẫn nhu cầu của người dân. Đặc biệt, đối với dòng sản phẩm căn hộ thông minh.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr />
+
+                <ul class="hNews-list">
+                    <li>
+                        <section class="hNews">
+                            <div class="hNews__thumb">
+                                <a href="chi-tiet-tin-tuc.html" title="" class="hNews__image">
+                                    <img src="images/bds_slider.jpg" alt="" class="img-cover img-thumbnail">
+                                </a>
+                            </div>
+                            <div class="hNews__info">
+                                <h3 class="mb-10"><a href="chi-tiet-tin-tuc.html" title="" class="hNews__title line-2">Thị trường bất động sản Thủ Dầu Một tăng nhiệt từ quý 1/2021</a></h3>
+                                <div class="hNews__date">20/03/2021</div>
+                                <div class="hNews__desc line-3">
+                                    Ngay từ quý 1/2021, thị trường bất động sản Thủ Dầu Một đã trở nên nóng hơn bao giờ hết với sự tăng trưởng không ngừng của cả nguồn cung lẫn nhu cầu của người dân. Đặc biệt, đối với dòng sản phẩm căn hộ thông minh.
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="hNews">
+                            <div class="hNews__thumb">
+                                <a href="chi-tiet-tin-tuc.html" title="" class="hNews__image">
+                                    <img src="images/bds_slider.jpg" alt="" class="img-cover img-thumbnail">
+                                </a>
+                            </div>
+                            <div class="hNews__info">
+                                <h3 class="mb-10"><a href="chi-tiet-tin-tuc.html" title="" class="hNews__title line-2">Thị trường bất động sản Thủ Dầu Một tăng nhiệt từ quý 1/2021</a></h3>
+                                <div class="hNews__date">20/03/2021</div>
+                                <div class="hNews__desc line-3">
+                                    Ngay từ quý 1/2021, thị trường bất động sản Thủ Dầu Một đã trở nên nóng hơn bao giờ hết với sự tăng trưởng không ngừng của cả nguồn cung lẫn nhu cầu của người dân. Đặc biệt, đối với dòng sản phẩm căn hộ thông minh.
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="hNews">
+                            <div class="hNews__thumb">
+                                <a href="chi-tiet-tin-tuc.html" title="" class="hNews__image">
+                                    <img src="images/bds_slider.jpg" alt="" class="img-cover img-thumbnail">
+                                </a>
+                            </div>
+                            <div class="hNews__info">
+                                <h3 class="mb-10"><a href="chi-tiet-tin-tuc.html" title="" class="hNews__title line-2">Thị trường bất động sản Thủ Dầu Một tăng nhiệt từ quý 1/2021</a></h3>
+                                <div class="hNews__date">20/03/2021</div>
+                                <div class="hNews__desc line-3">
+                                    Ngay từ quý 1/2021, thị trường bất động sản Thủ Dầu Một đã trở nên nóng hơn bao giờ hết với sự tăng trưởng không ngừng của cả nguồn cung lẫn nhu cầu của người dân. Đặc biệt, đối với dòng sản phẩm căn hộ thông minh.
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="hNews">
+                            <div class="hNews__thumb">
+                                <a href="chi-tiet-tin-tuc.html" title="" class="hNews__image">
+                                    <img src="images/bds_slider.jpg" alt="" class="img-cover img-thumbnail">
+                                </a>
+                            </div>
+                            <div class="hNews__info">
+                                <h3 class="mb-10"><a href="chi-tiet-tin-tuc.html" title="" class="hNews__title line-2">Thị trường bất động sản Thủ Dầu Một tăng nhiệt từ quý 1/2021</a></h3>
+                                <div class="hNews__date">20/03/2021</div>
+                                <div class="hNews__desc line-3">
+                                    Ngay từ quý 1/2021, thị trường bất động sản Thủ Dầu Một đã trở nên nóng hơn bao giờ hết với sự tăng trưởng không ngừng của cả nguồn cung lẫn nhu cầu của người dân. Đặc biệt, đối với dòng sản phẩm căn hộ thông minh.
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="hNews">
+                            <div class="hNews__thumb">
+                                <a href="chi-tiet-tin-tuc.html" title="" class="hNews__image">
+                                    <img src="images/bds_slider.jpg" alt="" class="img-cover img-thumbnail">
+                                </a>
+                            </div>
+                            <div class="hNews__info">
+                                <h3 class="mb-10"><a href="chi-tiet-tin-tuc.html" title="" class="hNews__title line-2">Thị trường bất động sản Thủ Dầu Một tăng nhiệt từ quý 1/2021</a></h3>
+                                <div class="hNews__date">20/03/2021</div>
+                                <div class="hNews__desc line-3">
+                                    Ngay từ quý 1/2021, thị trường bất động sản Thủ Dầu Một đã trở nên nóng hơn bao giờ hết với sự tăng trưởng không ngừng của cả nguồn cung lẫn nhu cầu của người dân. Đặc biệt, đối với dòng sản phẩm căn hộ thông minh.
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+
+                <div class="mt-20 mb-40">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item"><a class="page-link" href="#"><<</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">>></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5">
+                <div class="box-filter mb-15">
+                    <h4 class="heading-14 panell-head">Tin đọc nhiều nhất</h4>
+                    <ul class="news-hit row">
+                        <li class="col-lg-12 col-md-12 col-sm-6 col-12">
+                            <a href="#" title="" class="news-hit__item">
+                                <div class="news-hit__thumb">
+                                    <img src="images/bds_slider1.jpg" alt="" class="img-cover img-thumbnail">
+                                </div>
+                                <div class="news-hit__info">
+                                    <h3 class="news-hit__title line-2">Chuyên gia gợi ý 4 "miền đất hứa" để đầu tư bất động sản năm 2021</h3>
+                                    <div class="bigNews__date">20/03/2021</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-lg-12 col-md-12 col-sm-6 col-12">
+                            <a href="#" title="" class="news-hit__item">
+                                <div class="news-hit__thumb">
+                                    <img src="images/bds_slider1.jpg" alt="" class="img-cover img-thumbnail">
+                                </div>
+                                <div class="news-hit__info">
+                                    <h3 class="news-hit__title line-2">Chuyên gia gợi ý 4 "miền đất hứa" để đầu tư bất động sản năm 2021</h3>
+                                    <div class="bigNews__date">20/03/2021</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-lg-12 col-md-12 col-sm-6 col-12">
+                            <a href="#" title="" class="news-hit__item">
+                                <div class="news-hit__thumb">
+                                    <img src="images/bds_slider1.jpg" alt="" class="img-cover img-thumbnail">
+                                </div>
+                                <div class="news-hit__info">
+                                    <h3 class="news-hit__title line-2">Chuyên gia gợi ý 4 "miền đất hứa" để đầu tư bất động sản năm 2021</h3>
+                                    <div class="bigNews__date">20/03/2021</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-lg-12 col-md-12 col-sm-6 col-12">
+                            <a href="#" title="" class="news-hit__item">
+                                <div class="news-hit__thumb">
+                                    <img src="images/bds_slider1.jpg" alt="" class="img-cover img-thumbnail">
+                                </div>
+                                <div class="news-hit__info">
+                                    <h3 class="news-hit__title line-2">Chuyên gia gợi ý 4 "miền đất hứa" để đầu tư bất động sản năm 2021</h3>
+                                    <div class="bigNews__date">20/03/2021</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-lg-12 col-md-12 col-sm-6 col-12">
+                            <a href="#" title="" class="news-hit__item">
+                                <div class="news-hit__thumb">
+                                    <img src="images/bds_slider1.jpg" alt="" class="img-cover img-thumbnail">
+                                </div>
+                                <div class="news-hit__info">
+                                    <h3 class="news-hit__title line-2">Chuyên gia gợi ý 4 "miền đất hứa" để đầu tư bất động sản năm 2021</h3>
+                                    <div class="bigNews__date">20/03/2021</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-lg-12 col-md-12 col-sm-6 col-12">
+                            <a href="#" title="" class="news-hit__item">
+                                <div class="news-hit__thumb">
+                                    <img src="images/bds_slider1.jpg" alt="" class="img-cover img-thumbnail">
+                                </div>
+                                <div class="news-hit__info">
+                                    <h3 class="news-hit__title line-2">Chuyên gia gợi ý 4 "miền đất hứa" để đầu tư bất động sản năm 2021</h3>
+                                    <div class="bigNews__date">20/03/2021</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="top-footer__title">MUA BÁN NHÀ ĐẤT TP HCM</h3>
+                    <ul class="top-footer__body">
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 1</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 2</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 3</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 4</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="top-footer__title">MUA BÁN NHÀ ĐẤT TP HCM</h3>
+                    <ul class="top-footer__body">
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 1</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 2</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 3</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 4</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="top-footer__title">MUA BÁN NHÀ ĐẤT TP HCM</h3>
+                    <ul class="top-footer__body">
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 1</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 2</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 3</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 4</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="top-footer__title">MUA BÁN NHÀ ĐẤT TP HCM</h3>
+                    <ul class="top-footer__body">
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 1</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 2</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 3</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 4</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact">
+                        <a href="#" class="footer-logo mb-20">
+                            <img src="/images/logo-footer-no1.svg" alt="" class="img-fluid">
+                        </a>
+                        <div class="footer-company-name text-center">
+                            Công ty Cổ phần PropertyGuru Việt Nam
+                            <a href="#" target="_blank">Một thành viên của tập đoàn PropertyGuru</a>
+                        </div>
+                        <div class="footer-add">
+                            <span class="mr-10">
+                                  <img src="images/placeholder-line.png">
+                              </span>Tầng 31, Keangnam Hanoi Landmark, Phạm Hùng, Nam Từ Liêm, Hà Nội
+                        </div>
+                        <div class="footer-add">
+                            <span class="mr-10">
+                                  <img src="images/phone-call.png">
+                              </span> (024) 3562 5939 - (024) 3562 5940
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row mlr-0 mb-20">
+                        <div class="col-md-4 col-sm-6 plr-0">
+                            <header class="footer__head">Hướng dẫn</header>
+                            <ul class="footer__body">
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 1</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 2</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 3</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 4</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 plr-0">
+                            <header class="footer__head">Quy định</header>
+                            <ul class="footer__body">
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 1</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 2</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 3</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 4</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 plr-0">
+                            <header class="footer__head">Tổng đài hỗ trợ</header>
+                            <ul class="footer__body">
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 1</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 2</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 3</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 4</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 5</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="heading-14 mb-15">
+                                Tải ứng dụng Batdongsan.com.vn
+                            </div>
+                            <div class="d-flex">
+                                <a href="#" class="d-inline-block mr-10">
+                                    <img src="images/google-play.png" alt="" class="img-fluid">
+                                </a>
+                                <a href="#" class="d-inline-block">
+                                    <img src="images/apple-app-store.png" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="heading-14 mb-15"> Đăng kí ngay để nhận thông tin từ Batdongsan.com.vn </div>
+                            <div class="search">
+                                <input type="text" class="input-text" placeholder="Nhập email của bạn">
+                                <button class="send">Gửi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-white" />
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Tầng 8, Tòa nhà Xổ số Kiến thiết (Lottery Tower), Số 77 Trần Nhân Tôn, Phường 9, Quận 5, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 0904 893 279</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Văn phòng Quận 1 TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Lầu 5 Sailing Tower, 111A Pasteur, phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 090 494 6163</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh Đà Nẵng</div>
+                        <div class="branch__desc">
+                            <div>Tầng 9, tòa nhà Vĩnh Trung Plaza, số 255 – 257 Hùng Vương, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng</div>
+                            <div>Điện thoại: (0236) 3 666 968 - Mobile: 0904 907 279</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Tầng 8, Tòa nhà Xổ số Kiến thiết (Lottery Tower), Số 77 Trần Nhân Tôn, Phường 9, Quận 5, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 0904 893 279</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Văn phòng Quận 1 TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Lầu 5 Sailing Tower, 111A Pasteur, phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 090 494 6163</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh Đà Nẵng</div>
+                        <div class="branch__desc">
+                            <div>Tầng 9, tòa nhà Vĩnh Trung Plaza, số 255 – 257 Hùng Vương, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng</div>
+                            <div>Điện thoại: (0236) 3 666 968 - Mobile: 0904 907 279</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Tầng 8, Tòa nhà Xổ số Kiến thiết (Lottery Tower), Số 77 Trần Nhân Tôn, Phường 9, Quận 5, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 0904 893 279</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Văn phòng Quận 1 TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Lầu 5 Sailing Tower, 111A Pasteur, phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 090 494 6163</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh Đà Nẵng</div>
+                        <div class="branch__desc">
+                            <div>Tầng 9, tòa nhà Vĩnh Trung Plaza, số 255 – 257 Hùng Vương, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng</div>
+                            <div>Điện thoại: (0236) 3 666 968 - Mobile: 0904 907 279</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-white" />
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="branch__item">
+                        <div class="branch__desc fontsize-12">
+                            Giấy ĐKKD số 0104630479 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 02/06/2010 <br/> Giấy phép ICP số 2399/GP-STTTT do Sở TTTT Hà Nội cấp ngày 04/09/2014<br/> Giấy phép GH ICP số 3832/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 08/08/2019<br/>                            Giấy phép SĐ, BS GP ICP số 3833/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 08/08/2019<br/> Giấy xác nhận số 1728/GXN-TTĐT do Sở TTTT Hà Nội cấp ngày 23/06/2020
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="branch__item">
+                        <div class="branch__desc fontsize-12">
+                            Chịu trách nhiệm nội dung GP ICP: Bà Đặng Thị Hường Chịu trách nhiệm sàn GDTMĐT: Ông Vũ Triệu Vương (Robert Vuong Trieu Vu) <br/> Quy chế, quy định giao dịch có hiệu lực từ 23/02/2020
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="branch__item">
+                        <div class="branch__desc fontsize-12">
+                            Copyright © 2007 - 2021 Batdongsan.com.vn<br/> Ghi rõ nguồn "Batdongsan.com.vn" khi phát hành lại thông tin từ website này.>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/header.js"></script>
+
+</html>
