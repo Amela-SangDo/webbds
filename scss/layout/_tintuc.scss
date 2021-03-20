@@ -1,0 +1,116 @@
+.bigNews{
+    &__thumb{
+        a{
+            display: block;
+            height: 180px;
+        }
+    }
+    &__info{
+        text-align: justify;
+    }
+    &__title{
+        font-size: 16px;
+        font-weight: bold;
+        color: $black;
+        &:hover{
+            color: $yellow1;
+        }
+    }
+    &__date{
+        color: #a0a0a0;
+        font-size: 13px;
+    }
+}
+.hNews{
+    display: flex;
+    &__thumb{
+        width: 180px;
+    }
+    &__image{
+        display: block;
+        height: 130px;
+    }
+    &__info{
+        width: calc(100% - 180px);
+        padding-left: 10px;
+        text-align: justify;
+    }
+    &__title{
+        font-size: 16px;
+        font-weight: bold;
+        color: $black;
+        &:hover{
+            color: $yellow1;
+        }
+    }
+    &__date{
+        color: #a0a0a0;
+        font-size: 13px;
+    }
+}
+@media (max-width: 575px) {
+    .hNews{
+        display: block;
+        &__thumb{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        &__image{
+            height: 230px;
+        }
+        &__info{
+            padding-left: 0;
+            width: 100%;
+        }
+    }
+}
+
+.hNews-list{
+    >li{
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px dashed #a0a0a0;
+    }
+}
+
+.news-hit{
+    padding: 20px;
+    >li{
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px dashed #a0a0a0;
+        
+    }
+    &__item{
+        display: block;
+        display: flex;
+    }
+    &__thumb{
+        width: 80px;
+        height: 60px;
+    }
+    &__info{
+        width: calc(100% - 80px);
+        padding-left: 10px;
+    }
+    &__title{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}
+.panell-head{
+    background: $yellow1;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px 10px;
+}
+.detail-news{
+    &__head{
+        margin-bottom: 20px;
+    }
+    &__desc{
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
