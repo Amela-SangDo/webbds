@@ -188,7 +188,173 @@
 .arrow-down>img {
     filter: contrast(0.2);
 }
-
+.nav-search {
+    background: #fff;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(4, 55, 88, 0.1);
+}
+.input-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid $grey1;
+}
+.nav-middle input.add-search {
+    border: 1px solid #ccd3d9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px 35px 10px 48px;
+    width: 280px;
+    height: 40px;
+    background: #fff url('../images/search.svg') no-repeat 16px center;
+    font-weight: normal;
+}
+.but-action {
+    &__item {
+        text-align: center;
+        width: 50%;
+        height: 40px;
+        padding: 10px;
+        color: #2c2f36;
+        float: left;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        border: 1px solid $yellow1;
+        &:first-child {
+            border-right: none;
+            border-radius: 8px 0 0 8px;
+        }
+        &:last-child {
+            border-radius: 0 8px 8px 0;
+        }
+        &.actived {
+            background-color: $yellow1;
+            color: white;
+        }
+        &:not(.actived):hover {
+            background-color: $yellow_active;
+            color: white;
+        }
+    }
+}
+.nav-dropdown {
+    position: relative;
+    width: calc((100% - 297px) * 0.17);
+    border-right: 1px solid $grey1;
+    cursor: pointer;
+    &:hover {
+        background-color: $yellow1;
+    }
+    &:hover &__label,
+    &:hover &__default:not(.hasTxt) {
+        color: white;
+    }
+    &__default {
+        cursor: pointer;
+        line-height: 20px;
+        color: $black2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100px;
+        &.hasTxt {
+            color: $yellow1;
+            font-weight: bold;
+        }
+    }
+    &__label {
+        font-size: 11px;
+        line-height: 16px;
+        height: 16px;
+        letter-spacing: .16px;
+        color: $black2;
+        padding-right: 20px;
+        background: url('../images/caret_down.svg') no-repeat right;
+        padding-bottom: 4px;
+        cursor: pointer;
+        display: inline-block;
+        @media only screen and (max-width: 1586px) and (min-width: 1281px) {
+            white-space: nowrap;
+        }
+    }
+    &__option {
+        display: none;
+        position: absolute;
+        max-height: 308px;
+        padding: 8px 0 0 0;
+        border-radius: 8px;
+        box-shadow: 0 8px 32px rgba(8, 55 ,81,0.3);
+        border-radius: 8px;
+        padding: 8px 0 0 0;
+        top: 64px;
+        left: 0;
+        z-index: 99;
+        background: #fff;
+        border: 0;
+        min-width: 280px;
+        touch-action: auto;
+    }
+    &__ddScroll {
+        position: relative;
+        overflow: auto;
+        height: 100%;
+        max-width: 100%;
+        outline: none;
+        direction: ltr;
+        max-height: 300px;
+        &::-webkit-scrollbar {
+          width: 6px;
+        }
+        &::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+        }
+        &::-webkit-scrollbar-thumb {
+          background: $yellow_active; 
+        }
+    }
+    .dd-item {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        line-height: 40px;
+        color: $black1;
+        padding: 0;
+        &__title {
+            display: flex;
+            &.actived {
+                color: $yellow1;
+                background: #edf7ff;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+    }
+    .sub-item {
+        span {
+            display: flex;
+            &.actived {
+                color: $yellow1;
+                background: #edf7ff;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+    }
+    .input-option:checked~&__option {
+        display: block;
+    }
+}
+.btn-search {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 6px 12px;
+    background-color: $yellow1;
+    color: white;
+    border-radius: 3px;
+}
 @media (max-width: 1250px) {
     header.pc-header {
         display: none !important;
