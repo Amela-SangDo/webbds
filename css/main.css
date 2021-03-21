@@ -22,6 +22,9 @@
 .color-yellow1 {
   color: #5a420c; }
 
+.color-yellow2 {
+  color: #aa8022; }
+
 .line-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -12111,3 +12114,94 @@ button {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px; }
+
+.post-search {
+  justify-content: center;
+  align-self: center; }
+  .post-search input, .post-search select {
+    outline: none;
+    box-shadow: none; }
+    .post-search input:focus, .post-search select:focus {
+      outline: none;
+      box-shadow: none;
+      border: 1px solid #5a420c; }
+
+.post .nav-tabs {
+  width: 100%;
+  background-color: #a177184d; }
+
+.post .nav-item {
+  width: 50%;
+  font-weight: 700;
+  text-align: center; }
+  .post .nav-item a {
+    border: none;
+    color: #3b4043; }
+    .post .nav-item a.active {
+      color: white;
+      background-color: #5a420c; }
+
+.post .card:active {
+  border: 1px solid #cdd6dd; }
+
+.post .card .card-header {
+  background-color: #a177184d; }
+  .post .card .card-header h5 {
+    text-align: center; }
+  .post .card .card-header:active {
+    border-bottom: 1px solid #cdd6dd; }
+
+.post input:active, .post input:focus, .post select:active, .post select:focus, .post textarea:active, .post textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #5a420c; }
+
+.post .form-group {
+  margin-bottom: 0; }
+  .post .form-group > label {
+    top: 16px;
+    left: 6px;
+    position: relative;
+    background-color: white;
+    padding: 0px 5px 0px 5px;
+    font-size: 0.9em; }
+  .post .form-group textarea {
+    resize: none; }
+
+.post iframe {
+  width: 100%; }
+
+.receive label {
+  margin-bottom: 0; }
+
+.money,
+.day {
+  color: #5a420c; }
+
+.post-head {
+  text-align: center; }
+  .post-head span {
+    color: #5a420c; }
+
+.fee-item {
+  border: 1px solid #cdd6dd; }
+  .fee-item .title {
+    height: 40px;
+    background-color: #a177184d;
+    color: #3b4043;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .fee-item .content {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.form-action {
+  justify-content: center;
+  align-items: center; }
+
+.post-content .box-filter {
+  border: 1px solid #cdd6dd; }
