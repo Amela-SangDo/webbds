@@ -1,0 +1,112 @@
+.post-search {
+    justify-content: center;
+    align-self: center;
+    input, select {
+        outline: none;
+        box-shadow: none;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $yellow1;
+        }
+    }
+}
+.post {
+    .nav-tabs {
+        width: 100%;
+        background-color: $yellow_active;
+    }
+    .nav-item {
+        width: 50%;
+        font-weight: 700;
+        text-align: center;
+        a {
+            border: none;
+            color: $black1;
+            &.active {
+                color: white;
+                background-color: $yellow1;
+            }
+        }
+    }
+    .card {
+        &:active {
+            border: 1px solid $grey1;
+        }
+        .card-header {
+            background-color: $yellow_active;
+            h5 {
+                text-align: center;
+            }
+            &:active {
+                border-bottom: 1px solid $grey1;
+            }
+        }
+    }
+    input, select, textarea {
+        &:active, &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $yellow1;
+        }
+    }
+    .form-group{
+        margin-bottom: 0;
+        & > label {
+            top: 16px;
+            left: 6px;
+            position: relative;
+            background-color: white;
+            padding: 0px 5px 0px 5px;
+            font-size: 0.9em;
+        }
+        textarea {
+            resize: none;
+        }
+    }
+    iframe {
+        width: 100%;
+    }
+}
+.receive {
+    label {
+        margin-bottom: 0;
+    }
+}
+.money,
+.day {
+    color: $yellow1;
+}
+.post-head {
+    text-align: center;
+    span {
+        color: $yellow1;
+    }
+}
+.fee-item {
+    border: 1px solid $grey1;
+    .title {
+        height: 40px;
+        background-color: $yellow_active;
+        color: $black1;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.form-action {
+    justify-content: center;
+    align-items: center;
+}
+.post-content {
+    .box-filter {
+        border: 1px solid $grey1;
+    }
+}

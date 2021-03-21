@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<style>
+    .hp-3__thumb::before {
+        background-image: linear-gradient(180deg, #00000094, #00000014);
+    }
+</style>
+
+<body>
+
+    <header class="pc-header pc-header--pd">
+        <section class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="pc-header__left">
+                    <h1 class="logo">
+                        <a href="/" title="" class="image">
+                            <img src="images/logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </h1>
+                    <ul class="pc-menu">
+                        <li>
+                            <a href="#" title="" class="pc-menu__link">Nhà đất bán</a>
+                            <ul class="sub-menu">
+                                <li><a href="/du-an.html" class="sub-menu__link">Bán căn hộ chung cư</a></li>
+                                <li><a href="/ban-nha-rieng" class="sub-menu__link">Bán nhà riêng</a></li>
+                                <li><a href="/ban-nha-biet-thu-lien-ke" class="sub-menu__link">Bán nhà biệt thự, liền kề</a></li>
+                                <li><a href="/ban-nha-mat-pho" class="sub-menu__link">Bán nhà mặt phố</a></li>
+                                <li><a href="/ban-dat-nen-du-an" class="sub-menu__link">Bán đất nền dự án</a></li>
+                                <li><a href="/ban-dat" class="sub-menu__link">Bán đất</a></li>
+                                <li><a href="/ban-trang-trai-khu-nghi-duong" class="sub-menu__link">Bán trang trại, khu nghỉ dưỡng</a></li>
+                                <li><a href="/ban-kho-nha-xuong" class="sub-menu__link">Bán kho, nhà xưởng</a></li>
+                                <li><a href="/ban-loai-bat-dong-san-khac" class="sub-menu__link">Bán loại bất động sản khác</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="pc-menu__link">Nhà đất cho thuê </a>
+                            <ul class="sub-menu">
+                                <li><a href="/ban-can-ho-chung-cu" class="sub-menu__link">Bán căn hộ chung cư</a></li>
+                                <li><a href="/ban-nha-rieng" class="sub-menu__link">Bán nhà riêng</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#" title="" class="pc-menu__link">Dự án</a> </li>
+                        <li> <a href="#" title="" class="pc-menu__link">Cần mua - cần thuê</a> </li>
+                        <li> <a href="tin-tuc.html" title="" class="pc-menu__link">Tin tức</a> </li>
+                        <li> <a href="#" title="" class="pc-menu__link">Nội - ngoại thất</a> </li>
+                        <li> <a href="#" title="" class="pc-menu__link">Phong thủy</a> </li>
+                        <li> <a href="#" title="" class="pc-menu__link">Danh bạ</a> </li>
+                    </ul>
+                </div>
+                <div class="pc-header__right">
+                    <div class="login">
+                        <a href="#" title="" class="login__link">Đăng nhập</a>
+                        <a href="#" title="" class="login__link">Đăng ký</a>
+                    </div>
+                    <a href="dang-tin.html" title="" class="post-news">Đăng tin</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <header class="mb-header">
+        <div class="container">
+            <div class="mb-header__flex">
+                <h1 class="logo">
+                    <a href="/" title="" class="image">
+                        <img src="images/logo.svg" alt="" class="img-fluid">
+                    </a>
+                </h1>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <img src="images/cancel.png" alt="" class="cancel">
+                </a>
+                <div class="home-header-menu">
+                    <ul class="mb-menu">
+                        <li><a href="/"><span class="text">Trang chủ</span></a></li>
+                        <li>
+                            <a href="#" class="haslink">
+                                <span class="text">Nhà đất bán</span>
+                                <span class="arrow-down"><img src="/images/caret_down.png" alt=""></span>
+                            </a>
+                            <ul class="mb-sub-menu">
+                                <li><a href="#" class="sub-menu__link">Bán căn hộ chung cư</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán nhà riêng</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán nhà biệt thự, liền kề</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán nhà mặt phố</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán đất nền dự án</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán đất</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán trang trại, khu nghỉ dưỡng</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán kho, nhà xưởng</a></li>
+                                <li><a href="#" class="sub-menu__link">Bán loại bất động sản khác</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="haslink">
+                                <span class="text">Nhà đất cho thuê</span>
+                                <span class="arrow-down"><img src="/images/caret_down.png" alt=""></span>
+                            </a>
+
+                            <ul class="mb-sub-menu">
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê căn hộ chung cư</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê nhà riêng</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê nhà mặt phố</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê nhà trọ, phòng trọ</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê văn phòng</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê cửa hàng - ki ốt</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê kho, nhà xưởng, đất</a></li>
+                                <li class="lv1"><a href="#" class="haslink">Cho thuê loại bất động sản khác</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="post-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-sm-12 col-md-12">
+                    <div class="mt-30 mb-15">
+                        <div class="post-search d-flex">
+                            <div class="mlr-10">
+                                <input type="text" name="keyword" class="form-control">
+                            </div>
+                            <div class="mlr-10">
+                                <select class="form-control" name="type">
+                                    <option value="1">Nhà đất bán</option>
+                                    <option value="2">Nhà đất cho thuê</option>
+                                    <option value="3">Tin tức</option>
+                                    <option value="4">Hỏi đáp</option>
+                                </select>
+                            </div>
+                            <div class="mlr-10">
+                                <button class="btn btn-success">Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading-24 mtb-20 post-head">
+                        <i class="fas fa-file-alt"></i>
+                        <span>ĐĂNG TIN RAO BÁN, CHO THUÊ NHÀ ĐẤT</span>
+                    </div>
+                    <div class="post">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div id="accordion">
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0 heading-16">THÔNG TIN CƠ BẢN</h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-12">
+                                                        <div class="form-group">
+                                                            <label for="usr">Tiêu đề (*)</label>
+                                                            <input type="text" class="form-control" id="usr" name="title">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="ht">Hình Thức (*)</label>
+                                                            <select class="form-control" id="ht" name="ht">
+                                                                <option value="1">Hình thức 1</option>
+                                                                <option value="1">Hình thức 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="ll">Loại (*)</label>
+                                                            <select class="form-control" id="ll" name="ll">
+                                                                <option value="1">Loại 1</option>
+                                                                <option value="2">Loại 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="tp">Tỉnh/Thành phố(*)</label>
+                                                            <select class="form-control" id="tp" name="tp">
+                                                                <option value="1">Hà Nội</option>
+                                                                <option value="1">TP Hồ Chí Minh</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="qh">Quận/Huyện(*)</label>
+                                                            <select class="form-control" id="qh" name="qh">
+                                                                <option value="1">Hai Bà Trưng</option>
+                                                                <option value="2">Phú Nhận</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="px">Phường/Xã</label>
+                                                            <select class="form-control" id="px" name="px">
+                                                                <option value="1">Mai Lâm</option>
+                                                                <option value="1">Vân Nội</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="dp">Đường/Phố</label>
+                                                            <select class="form-control" id="dp" name="dp">
+                                                                <option value="1">Đường 1</option>
+                                                                <option value="2">Đường 5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="da">Dự án</label>
+                                                            <select class="form-control" id="da" name="da">
+                                                                <option value="1">Dự án 1</option>
+                                                                <option value="1">Dự án 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="dt">Diện tích (m2)</label>
+                                                            <input type="text" class="form-control" id="dt" name="s">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="price">Giá</label>
+                                                            <input type="text" class="form-control" id="price" name="price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="currency">Đơn vị</label>
+                                                            <input type="text" class="form-control" id="currency" name="currency">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-12">
+                                                        <div class="total mt-15">Tổng giá tiền: <span class="price-total"></span></div>
+                                                    </div>
+                                                    <div class="col-md-12 col-12">
+                                                        <div class="form-group">
+                                                            <label for="address">Địa chỉ (*)</label>
+                                                            <input type="text" class="form-control" id="address" name="address">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingTow">
+                                            <h5 class="mb-0 heading-16">THÔNG TIN MÔ TẢ</h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-12">
+                                                        <span>(*) Tối đa chỉ 1500 ký tự</span>
+                                                        <div class="form-group">
+                                                            <label for="info">Mô tả(*)</label>
+                                                            <textarea class="form-control"
+                                                                id="info"
+                                                                name="info"
+                                                                rows="10"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 heading-16">THÔNG TIN KHÁC</h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="first">Mặt tiền (m)</label>
+                                                            <input type="text" class="form-control" id="first" name="first">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="line">Mặt tiền (m)</label>
+                                                            <input type="text" class="form-control" id="line" name="line">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="hgn">Hướng nhà</label>
+                                                            <select class="form-control" id="hgn" name="hgn">
+                                                                <option value="1">Đông</option>
+                                                                <option value="2">Tây</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="hbc">Hướng ban công</label>
+                                                            <select class="form-control" id="hbc" name="hbc">
+                                                                <option value="1">Đông</option>
+                                                                <option value="1">Tây</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="floor">Số tầng</label>
+                                                            <input type="text" class="form-control" id="floor" name="floor">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="bedroom">Số phòng ngủ</label>
+                                                            <input type="text" class="form-control" id="bedroom" name="bedroom">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="tolet">Số toilet</label>
+                                                            <input type="text" class="form-control" id="tolet" name="tolet">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-12">
+                                                        <div class="form-group">
+                                                            <label for="feature">Nội thất</label>
+                                                            <textarea class="form-control" id="feature" name="feature"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-12">
+                                                        <div class="form-group">
+                                                            <label for="law">Thông tin pháp lý</label>
+                                                            <textarea class="form-control" id="law" name="law"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 heading-16">BẢN ĐỒ</h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="mb-15">Để tăng độ tin cậy và tin rao được nhiều người quan tâm hơn</span>
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.438131499159!2d105.81535541542316!3d21.015148293617596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7cb4492439%3A0x71145ecb5bcff592!2zMjk4IFRow6FpIEjDoCwgTMOhbmcgSOG6oSwgxJDhu5FuZyDEkGEsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1616315526288!5m2!1svi!2s"
+                                                            width="600" height="450"
+                                                            style="border:0;"
+                                                            allowfullscreen="" 
+                                                            loading="lazy">
+                                                        </iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 heading-16">LIÊN HỆ</h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="user">Tên liên hệ:</label>
+                                                            <input type="text" class="form-control" id="user" name="user">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="user-addr">Địa chỉ:</label>
+                                                            <input type="text" class="form-control" id="user-addr" name="user-addr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="phone">Điện thoại:</label>
+                                                            <input type="text" class="form-control" id="phone" name="phone">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-6">
+                                                        <div class="form-group">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="email">Email:</label>
+                                                            <input type="email" class="form-control" id="email" name="email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-6">
+                                                        <div class="d-flex mt-35 receive">
+                                                            <input type="checkbox" name="receive" id="re" class="checkbox mt-3 mr-5">
+                                                            <label for="re">Nhận email phản hồi</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 heading-16">LỊCH ĐĂNG TIN</h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="form-group">
+                                                            <label for="postType">Loại tin rao</label>
+                                                            <select class="form-control" id="postType" name="postType">
+                                                                <option value="1">Tin thường</option>
+                                                                <option value="2">Tin vip 1</option>
+                                                                <option value="3">Tin vip 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="form-group">
+                                                            <label for="datePicker">Ngày bắt đầu</label>
+                                                            <input type="date" name="start" class="form-control" id="datePicker">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="form-group">
+                                                            <label for="datePicker2">Ngày kết thúc</label>
+                                                            <input type="date" name="end" class="form-control" id="datePicker2">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="note mtb-20">
+                                                            <span>Tin thường: Là loại tin đăng bằng chữ màu xanh, khung màu xanh</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="d-flex">
+                                                            <span class="price-all">Đơn giá cuối cùng: <span class="money heading-18">2 nghìn 727 đồng/Ngày</span></span>
+                                                            <span class="days ml-50">Số ngày: <span class="day heading-18">31 ngày</span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="note mtb-20">
+                                                            <span>Quý khách nên chọn đăng tin Vip để có hiệu quả cao hơn.Exp: tin Vip1 có lượt xem cao hơn <b class="heading-16 color-yellow1">20 lần</b> so với tin thường</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 heading-16">THÀNH TIỀN</h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="fee-item">
+                                                            <div class="title">Phí đăng tin</div>
+                                                            <div class="content heading-16 color-yellow2">84 nghìn 537 đồng</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="fee-item">
+                                                            <div class="title">VAT(10%)</div>
+                                                            <div class="content heading-16 color-yellow2">8 nghìn 454 đồng</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="fee-item all">
+                                                            <div class="title">Thành tiền</div>
+                                                            <div class="content heading-16 color-yellow2">93 nghìn</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex mtb-20 form-action">
+                                    <button class="btn btn-primary mr-20">Đăng tin không cần tài khoản</button>
+                                    <button class="btn btn-success">Xem trước</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                 <div id="accordion">
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0 heading-16">THÔNG TIN CƠ BẢN</h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-12">
+                                                        <div class="form-group">
+                                                            <label for="usr">Tiêu đề (*)</label>
+                                                            <input type="text" class="form-control" id="usr" name="title">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="ht">Hình Thức (*)</label>
+                                                            <select class="form-control" id="ht" name="ht">
+                                                                <option value="1">Hình thức 1</option>
+                                                                <option value="1">Hình thức 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="ll">Loại (*)</label>
+                                                            <select class="form-control" id="ll" name="ll">
+                                                                <option value="1">Loại 1</option>
+                                                                <option value="2">Loại 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="tp">Tỉnh/Thành phố(*)</label>
+                                                            <select class="form-control" id="tp" name="tp">
+                                                                <option value="1">Hà Nội</option>
+                                                                <option value="1">TP Hồ Chí Minh</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="qh">Quận/Huyện(*)</label>
+                                                            <select class="form-control" id="qh" name="qh">
+                                                                <option value="1">Hai Bà Trưng</option>
+                                                                <option value="2">Phú Nhận</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="px">Phường/Xã</label>
+                                                            <select class="form-control" id="px" name="px">
+                                                                <option value="1">Mai Lâm</option>
+                                                                <option value="1">Vân Nội</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="dp">Đường/Phố</label>
+                                                            <select class="form-control" id="dp" name="dp">
+                                                                <option value="1">Đường 1</option>
+                                                                <option value="2">Đường 5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="da">Dự án</label>
+                                                            <select class="form-control" id="da" name="da">
+                                                                <option value="1">Dự án 1</option>
+                                                                <option value="1">Dự án 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="dt">Diện tích (m2)</label>
+                                                            <input type="text" class="form-control" id="dt" name="s">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="price">Giá</label>
+                                                            <input type="text" class="form-control" id="price" name="price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="currency">Đơn vị</label>
+                                                            <input type="text" class="form-control" id="currency" name="currency">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-12">
+                                                        <div class="total mt-15">Tổng giá tiền: <span class="price-total"></span></div>
+                                                    </div>
+                                                    <div class="col-md-12 col-12">
+                                                        <div class="form-group">
+                                                            <label for="address">Địa chỉ (*)</label>
+                                                            <input type="text" class="form-control" id="address" name="address">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingTow">
+                                            <h5 class="mb-0 heading-16">THÔNG TIN MÔ TẢ</h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-12">
+                                                        <span>(*) Tối đa chỉ 1500 ký tự</span>
+                                                        <div class="form-group">
+                                                            <label for="info">Mô tả(*)</label>
+                                                            <textarea class="form-control"
+                                                                id="info"
+                                                                name="info"
+                                                                rows="10"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 heading-16">THÔNG TIN KHÁC</h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="first">Mặt tiền (m)</label>
+                                                            <input type="text" class="form-control" id="first" name="first">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="line">Mặt tiền (m)</label>
+                                                            <input type="text" class="form-control" id="line" name="line">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="hgn">Hướng nhà</label>
+                                                            <select class="form-control" id="hgn" name="hgn">
+                                                                <option value="1">Đông</option>
+                                                                <option value="2">Tây</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="hbc">Hướng ban công</label>
+                                                            <select class="form-control" id="hbc" name="hbc">
+                                                                <option value="1">Đông</option>
+                                                                <option value="1">Tây</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="floor">Số tầng</label>
+                                                            <input type="text" class="form-control" id="floor" name="floor">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="bedroom">Số phòng ngủ</label>
+                                                            <input type="text" class="form-control" id="bedroom" name="bedroom">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-6">
+                                                        <div class="form-group">
+                                                            <label for="tolet">Số toilet</label>
+                                                            <input type="text" class="form-control" id="tolet" name="tolet">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-12">
+                                                        <div class="form-group">
+                                                            <label for="feature">Nội thất</label>
+                                                            <textarea class="form-control" id="feature" name="feature"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-12">
+                                                        <div class="form-group">
+                                                            <label for="law">Thông tin pháp lý</label>
+                                                            <textarea class="form-control" id="law" name="law"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 heading-16">BẢN ĐỒ</h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="mb-15">Để tăng độ tin cậy và tin rao được nhiều người quan tâm hơn</span>
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.438131499159!2d105.81535541542316!3d21.015148293617596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7cb4492439%3A0x71145ecb5bcff592!2zMjk4IFRow6FpIEjDoCwgTMOhbmcgSOG6oSwgxJDhu5FuZyDEkGEsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1616315526288!5m2!1svi!2s"
+                                                            width="600" height="450"
+                                                            style="border:0;"
+                                                            allowfullscreen="" 
+                                                            loading="lazy">
+                                                        </iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 heading-16">LIÊN HỆ</h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="user">Tên liên hệ:</label>
+                                                            <input type="text" class="form-control" id="user" name="user">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="user-addr">Địa chỉ:</label>
+                                                            <input type="text" class="form-control" id="user-addr" name="user-addr">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="phone">Điện thoại:</label>
+                                                            <input type="text" class="form-control" id="phone" name="phone">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-6">
+                                                        <div class="form-group">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="email">Email:</label>
+                                                            <input type="email" class="form-control" id="email" name="email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-6">
+                                                        <div class="d-flex mt-35 receive">
+                                                            <input type="checkbox" name="receive" id="re" class="checkbox mt-3 mr-5">
+                                                            <label for="re">Nhận email phản hồi</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 heading-16">LỊCH ĐĂNG TIN</h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="form-group">
+                                                            <label for="postType">Loại tin rao</label>
+                                                            <select class="form-control" id="postType" name="postType">
+                                                                <option value="1">Tin thường</option>
+                                                                <option value="2">Tin vip 1</option>
+                                                                <option value="3">Tin vip 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="form-group">
+                                                            <label for="datePicker">Ngày bắt đầu</label>
+                                                            <input type="date" name="start" class="form-control" id="datePicker">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="form-group">
+                                                            <label for="datePicker2">Ngày kết thúc</label>
+                                                            <input type="date" name="end" class="form-control" id="datePicker2">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="note mtb-20">
+                                                            <span>Tin thường: Là loại tin đăng bằng chữ màu xanh, khung màu xanh</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="d-flex">
+                                                            <span class="price-all">Đơn giá cuối cùng: <span class="money heading-18">2 nghìn 727 đồng/Ngày</span></span>
+                                                            <span class="days ml-50">Số ngày: <span class="day heading-18">31 ngày</span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="note mtb-20">
+                                                            <span>Quý khách nên chọn đăng tin Vip để có hiệu quả cao hơn.Exp: tin Vip1 có lượt xem cao hơn <b class="heading-16 color-yellow1">20 lần</b> so với tin thường</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-20">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 heading-16">THÀNH TIỀN</h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="fee-item">
+                                                            <div class="title">Phí đăng tin</div>
+                                                            <div class="content heading-16 color-yellow2">84 nghìn 537 đồng</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="fee-item">
+                                                            <div class="title">VAT(10%)</div>
+                                                            <div class="content heading-16 color-yellow2">8 nghìn 454 đồng</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-4">
+                                                        <div class="fee-item all">
+                                                            <div class="title">Thành tiền</div>
+                                                            <div class="content heading-16 color-yellow2">93 nghìn</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex mtb-20 form-action">
+                                    <button class="btn btn-primary mr-20">Đăng tin không cần tài khoản</button>
+                                    <button class="btn btn-success">Xem trước</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-md-12">
+                    <div class="box-filter mb-15 mt-80">
+                        <h4 class="heading-14 panell-head">HƯỚNG DẪN ĐĂNG TIN</h4>
+                        <div class="mt-15 p-10">
+                            <div class="txt mb-10">
+                                Thông tin có dấu (*) là bắt buộc.
+                                Không gộp nhiều bất động sản trong một tin rao.
+                                Không đăng lại tin đã đăng trên www.batdongsan.com.vn.
+                            </div>
+                            <div class="txt">
+                                Để quá trình đăng tin và duyệt nhanh hơn, xin lưu ý: gõ tiếng việt có dấu và không viết tắt...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-filter mb-15 mt-20">
+                        <h4 class="heading-14 panell-head">Về chúng tôi</h4>
+                        <div class="mt-15 p-10">
+                            <div class="txt mb-10">
+                                <b class="heading-14">Batdongsan.com.vn</b> được sử dụng bởi 4 triệu người dùng có nhu cầu tìm kiếm bất động sản với 70 triệu lượt xem trang mỗi tháng và được các công cụ đánh giá phổ biến nhất thế giới như Google, SimilarWeb xếp hạng là Kênh thông tin số 1 về bất động sản tại Việt Nam.Người tìm kiếm bất động sản có thể tìm thấy hầu hết các thông tin, dữ liệu về bất động sản và các tin tức thị trường, phong thủy, kiến trúc cũng như các tư vấn có ích từ Batdongsan.com.vn. Batdongsan.com.vn cũng là đối tác tin cậy và thường xuyên của hầu hết các chủ đầu tư, sàn giao dịch, nhà môi giới cá nhân tại Việt Nam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="top-footer__title">MUA BÁN NHÀ ĐẤT TP HCM</h3>
+                    <ul class="top-footer__body">
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 1</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 2</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 3</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 4</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="top-footer__title">MUA BÁN NHÀ ĐẤT TP HCM</h3>
+                    <ul class="top-footer__body">
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 1</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 2</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 3</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 4</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="top-footer__title">MUA BÁN NHÀ ĐẤT TP HCM</h3>
+                    <ul class="top-footer__body">
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 1</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 2</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 3</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 4</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="top-footer__title">MUA BÁN NHÀ ĐẤT TP HCM</h3>
+                    <ul class="top-footer__body">
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 1</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 2</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 3</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 4</a></li>
+                        <li><a href="#" title="" class="top-footer__link">Bán nhà quận 5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact">
+                        <a href="#" class="footer-logo mb-20">
+                            <img src="/images/logo-footer-no1.svg" alt="" class="img-fluid">
+                        </a>
+                        <div class="footer-company-name text-center">
+                            Công ty Cổ phần PropertyGuru Việt Nam
+                            <a href="#" target="_blank">Một thành viên của tập đoàn PropertyGuru</a>
+                        </div>
+                        <div class="footer-add">
+                            <span class="mr-10">
+                              <img src="images/placeholder-line.png">
+                          </span>Tầng 31, Keangnam Hanoi Landmark, Phạm Hùng, Nam Từ Liêm, Hà Nội
+                        </div>
+                        <div class="footer-add">
+                            <span class="mr-10">
+                              <img src="images/phone-call.png">
+                          </span> (024) 3562 5939 - (024) 3562 5940
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row mlr-0 mb-20">
+                        <div class="col-md-4 col-sm-6 plr-0">
+                            <header class="footer__head">Hướng dẫn</header>
+                            <ul class="footer__body">
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 1</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 2</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 3</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 4</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 plr-0">
+                            <header class="footer__head">Quy định</header>
+                            <ul class="footer__body">
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 1</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 2</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 3</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 4</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 plr-0">
+                            <header class="footer__head">Tổng đài hỗ trợ</header>
+                            <ul class="footer__body">
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 1</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 2</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 3</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 4</a></li>
+                                <li><a href="#" title="" class="footer__link">Bán nhà quận 5</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="heading-14 mb-15">
+                                Tải ứng dụng Batdongsan.com.vn
+                            </div>
+                            <div class="d-flex">
+                                <a href="#" class="d-inline-block mr-10">
+                                    <img src="images/google-play.png" alt="" class="img-fluid">
+                                </a>
+                                <a href="#" class="d-inline-block">
+                                    <img src="images/apple-app-store.png" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="heading-14 mb-15"> Đăng kí ngay để nhận thông tin từ Batdongsan.com.vn </div>
+                            <div class="search">
+                                <input type="text" class="input-text" placeholder="Nhập email của bạn">
+                                <button class="send">Gửi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-white" />
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Tầng 8, Tòa nhà Xổ số Kiến thiết (Lottery Tower), Số 77 Trần Nhân Tôn, Phường 9, Quận 5, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 0904 893 279</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Văn phòng Quận 1 TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Lầu 5 Sailing Tower, 111A Pasteur, phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 090 494 6163</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh Đà Nẵng</div>
+                        <div class="branch__desc">
+                            <div>Tầng 9, tòa nhà Vĩnh Trung Plaza, số 255 – 257 Hùng Vương, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng</div>
+                            <div>Điện thoại: (0236) 3 666 968 - Mobile: 0904 907 279</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Tầng 8, Tòa nhà Xổ số Kiến thiết (Lottery Tower), Số 77 Trần Nhân Tôn, Phường 9, Quận 5, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 0904 893 279</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Văn phòng Quận 1 TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Lầu 5 Sailing Tower, 111A Pasteur, phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 090 494 6163</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh Đà Nẵng</div>
+                        <div class="branch__desc">
+                            <div>Tầng 9, tòa nhà Vĩnh Trung Plaza, số 255 – 257 Hùng Vương, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng</div>
+                            <div>Điện thoại: (0236) 3 666 968 - Mobile: 0904 907 279</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Tầng 8, Tòa nhà Xổ số Kiến thiết (Lottery Tower), Số 77 Trần Nhân Tôn, Phường 9, Quận 5, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 0904 893 279</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Văn phòng Quận 1 TP. Hồ Chí Minh</div>
+                        <div class="branch__desc">
+                            <div>Lầu 5 Sailing Tower, 111A Pasteur, phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</div>
+                            <div>Điện thoại: 090 494 6163</div>
+                        </div>
+                    </div>
+                    <div class="branch__item">
+                        <div class="heading-14 branch__title">Chi nhánh Đà Nẵng</div>
+                        <div class="branch__desc">
+                            <div>Tầng 9, tòa nhà Vĩnh Trung Plaza, số 255 – 257 Hùng Vương, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng</div>
+                            <div>Điện thoại: (0236) 3 666 968 - Mobile: 0904 907 279</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-white" />
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="branch__item">
+                        <div class="branch__desc fontsize-12">
+                            Giấy ĐKKD số 0104630479 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 02/06/2010 <br/> Giấy phép ICP số 2399/GP-STTTT do Sở TTTT Hà Nội cấp ngày 04/09/2014<br/> Giấy phép GH ICP số 3832/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 08/08/2019<br/>                            Giấy phép SĐ, BS GP ICP số 3833/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 08/08/2019<br/> Giấy xác nhận số 1728/GXN-TTĐT do Sở TTTT Hà Nội cấp ngày 23/06/2020
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="branch__item">
+                        <div class="branch__desc fontsize-12">
+                            Chịu trách nhiệm nội dung GP ICP: Bà Đặng Thị Hường Chịu trách nhiệm sàn GDTMĐT: Ông Vũ Triệu Vương (Robert Vuong Trieu Vu) <br/> Quy chế, quy định giao dịch có hiệu lực từ 23/02/2020
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="branch__item">
+                        <div class="branch__desc fontsize-12">
+                            Copyright © 2007 - 2021 Batdongsan.com.vn<br/> Ghi rõ nguồn "Batdongsan.com.vn" khi phát hành lại thông tin từ website này.>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="scrollToTop fade-out" id="toTop">
+        <i class="fas fa-2x fa-chevron-up"></i>
+    </a>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/function.js"></script>
+</body>
+
+</html>

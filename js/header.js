@@ -30,3 +30,17 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.body.style.backgroundColor = "white";
 }
+
+Date.prototype.toDateInputValue = (function() {
+    var local = new Date(this);
+    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+    return local.toJSON().slice(0,10);
+});
+
+$(function() {
+  const now = new Date(); 
+  const nextMonth = new Date().setDate(now.getDate() + 30);
+  console.log(nextMonth)
+  $('#datePicker').val(now.toDateInputValue());
+  $('#datePicker2').val(new Date(nextMonth).toDateInputValue());
+})
