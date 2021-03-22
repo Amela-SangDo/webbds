@@ -36,6 +36,7 @@
         position: relative;
     }
 }
+
 .inner-form {
     position: absolute;
     top: 50%;
@@ -74,6 +75,7 @@
         }
     }
 }
+
 .select-option {
     background-color: #a17718b0;
     border-radius: 0 5px 5px 5px;
@@ -84,12 +86,13 @@
     .search {
         width: 100%;
     }
-    select {
-    }
+    select {}
 }
+
 .select-option {
     width: 100%;
 }
+
 .nav-tabs.hp {
     border-bottom: none;
     min-width: 500px;
@@ -133,6 +136,7 @@
 .hp-3 {
     &__item {
         position: relative;
+        height: 100%;
     }
     &__thumb {
         position: relative;
@@ -235,8 +239,10 @@
 
 .hp-highlights {
     position: relative;
-    &__item {        display: block;
+    &__item {
+        display: block;
         padding: 2%;
+        height: 100%;
         &:hover .hp-highlights__info {
             color: $yellow1;
         }
@@ -364,8 +370,10 @@
     color: #7ac6ea;
     font-weight: normal;
 }
+
 .hp-2 {
     .item {
+        height: 100%;
         border: 1px solid $yellow_active;
         margin-bottom: 20px !important;
         &:hover {
@@ -373,6 +381,7 @@
         }
     }
 }
+
 .heading-25,
 .heading-28 {
     @media (max-width: 768px) {
@@ -391,8 +400,9 @@
         }
     }
 }
-.scrollToTop{
-    width: 50px; 
+
+.scrollToTop {
+    width: 50px;
     height: 50px;
     padding: 10px;
     border-radius: 50%;
@@ -403,12 +413,13 @@
     position: fixed;
     bottom: 75px;
     right: 40px;
-    &:hover{
-        text-decoration:none;
+    &:hover {
+        text-decoration: none;
         color: #fff;
         background-color: $yellow1;
     }
 }
+
 .fade-in {
     opacity: 1;
     animation-name: fadeInOpacity;
@@ -416,6 +427,7 @@
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
 }
+
 .fade-out {
     opacity: 0;
     animation-name: fadeOutOpacity;
@@ -441,6 +453,7 @@
         opacity: 0;
     }
 }
+
 .slick-dots {
     bottom: 40px;
     display: flex;
@@ -458,14 +471,16 @@
         }
     }
 }
+
 #banner-top {
-    .hp-highlights__thumb{
+    .hp-highlights__thumb {
         height: 600px;
         @media screen and (max-width: 768px) {
             height: 400px;
         }
     }
 }
+
 * {
     &:active,
     &:focus {
