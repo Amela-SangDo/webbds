@@ -10983,6 +10983,10 @@ button {
     .slick-prev {
       height: 30px;
       width: 30px; } }
+  .slick-next:hover,
+  .slick-prev:hover {
+    background: #fff;
+    box-shadow: 0 4px 4px #00000044; }
 
 .slick-prev {
   left: -10px; }
