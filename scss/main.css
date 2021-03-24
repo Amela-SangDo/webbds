@@ -12114,10 +12114,12 @@ button {
 .post-search {
   justify-content: center;
   align-self: center; }
-  .post-search input, .post-search select {
+  .post-search input,
+  .post-search select {
     outline: none;
     box-shadow: none; }
-    .post-search input:focus, .post-search select:focus {
+    .post-search input:focus,
+    .post-search select:focus {
       outline: none;
       box-shadow: none;
       border: 1px solid #5a420c; }
@@ -12143,7 +12145,11 @@ button {
     text-align: center; }
   .post .card .card-header:active {
     border-bottom: 1px solid #cdd6dd; }
-.post input:active, .post input:focus, .post select:active, .post select:focus, .post textarea:active, .post textarea:focus {
+.post input:active, .post input:focus,
+.post select:active,
+.post select:focus,
+.post textarea:active,
+.post textarea:focus {
   outline: none;
   box-shadow: none;
   border: 1px solid #5a420c; }
@@ -12153,7 +12159,7 @@ button {
     top: 16px;
     left: 6px;
     position: relative;
-    background-color: white;
+    background-color: transparent;
     padding: 0px 5px 0px 5px;
     font-size: 0.9em; }
   .post .form-group textarea {

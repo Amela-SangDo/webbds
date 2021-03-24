@@ -1,7 +1,8 @@
 .post-search {
     justify-content: center;
     align-self: center;
-    input, select {
+    input,
+    select {
         outline: none;
         box-shadow: none;
         &:focus {
@@ -11,6 +12,7 @@
         }
     }
 }
+
 .post {
     .nav-tabs {
         width: 100%;
@@ -43,20 +45,23 @@
             }
         }
     }
-    input, select, textarea {
-        &:active, &:focus {
+    input,
+    select,
+    textarea {
+        &:active,
+        &:focus {
             outline: none;
             box-shadow: none;
             border: 1px solid $yellow1;
         }
     }
-    .form-group{
+    .form-group {
         margin-bottom: 0;
-        & > label {
+        &>label {
             top: 16px;
             left: 6px;
             position: relative;
-            background-color: white;
+            background-color: transparent;
             padding: 0px 5px 0px 5px;
             font-size: 0.9em;
         }
@@ -68,21 +73,25 @@
         width: 100%;
     }
 }
+
 .receive {
     label {
         margin-bottom: 0;
     }
 }
+
 .money,
 .day {
     color: $yellow1;
 }
+
 .post-head {
     text-align: center;
     span {
         color: $yellow1;
     }
 }
+
 .fee-item {
     border: 1px solid $grey1;
     .title {
@@ -101,10 +110,12 @@
         align-items: center;
     }
 }
+
 .form-action {
     justify-content: center;
     align-items: center;
 }
+
 .post-content {
     .box-filter {
         border: 1px solid $grey1;
