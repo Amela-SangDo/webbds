@@ -1,5 +1,5 @@
 .slick-next,
-.slick-prev{
+.slick-prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -14,14 +14,21 @@
         height: 30px;
         width: 30px;
     }
+    &:hover {
+        background: #fff;
+        box-shadow: 0 4px 4px #00000044;
+    }
 }
-.slick-prev{
+
+.slick-prev {
     left: -10px;
 }
-.slick-next{
- right: -10px;
+
+.slick-next {
+    right: -10px;
 }
-.slick-disabled{    
+
+.slick-disabled {
     opacity: 0.7;
     cursor: not-allowed;
 }
