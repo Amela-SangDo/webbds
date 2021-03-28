@@ -11826,11 +11826,6 @@ button {
     #banner-top .hp-highlights__thumb {
       height: 400px; } }
 
-*:active, *:focus {
-  border: none;
-  outline: none;
-  box-shadow: none; }
-
 .duan .left a {
   border: 1px solid #cdd6dd;
   color: #333333; }
