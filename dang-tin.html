@@ -77,7 +77,10 @@
                         <img src="images/logo.svg" alt="" class="img-fluid">
                     </a>
                 </h1>
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <div class="mb-header--right">
+                    <span data-toggle="modal" data-target="#modal-search"><img src="images/search.svg" alt="" class="img-fluid"></span>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
             </div>
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
@@ -120,10 +123,86 @@
                                 <li class="lv1"><a href="#" class="haslink">Cho thuê loại bất động sản khác</a></li>
                             </ul>
                         </li>
-                        <li><a href="/"><span class="text">Tin tức</span></a></li>
+
+                        <li><a href="/tin-tuc.html"><span class="text">Tin tức</span></a></li>
                     </ul>
                 </div>
             </div>
+
+            <div class="modal fade mb-modal" id="modal-search">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Tìm kiếm bất động sản</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"><img src="images/x.svg" alt="" class="img-fluid"></span>
+                        </button>
+                      </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="search-tl">
+                            <ul class="nav search-tab search-tab-mb" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home">Nhà bán đất</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile">Nhà đất cho thuê</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="">
+                                        <div class="input-group input-group-lg mb-8">
+                                            <input type="text" class="mb-input" placeholder="Tìm kiếm ...">
+                                        </div>
+                                        <div class="input-group input-group-lg mb-8">
+                                            <select name="choose" class="mb-input">
+                                                <option value="1">Nha ban</option>
+                                                <option value="2">Nha mat dat</option>
+                                                <option value="3">Trang trai</option>
+                                                <option value="4">Khu cong nghiep</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group input-group-lg mb-8">
+                                            <select name="choose" class="mb-input">
+                                                <option value="1">Nha ban</option>
+                                                <option value="2">Nha mat dat</option>
+                                                <option value="3">Trang trai</option>
+                                                <option value="4">Khu cong nghiep</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group input-group-lg mb-8">
+                                            <select name="choose" class="mb-input">
+                                                <option value="1">Nha ban</option>
+                                                <option value="2">Nha mat dat</option>
+                                                <option value="3">Trang trai</option>
+                                                <option value="4">Khu cong nghiep</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group input-group-lg mb-8">
+                                            <select name="choose" class="mb-input">
+                                                <option value="1">Nha ban</option>
+                                                <option value="2">Nha mat dat</option>
+                                                <option value="3">Trang trai</option>
+                                                <option value="4">Khu cong nghiep</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                                
+                            </div>
+                            
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Đóng</button>
+                      <button type="button" class="btn btn-primary">Tìm kiếm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </header>
 
