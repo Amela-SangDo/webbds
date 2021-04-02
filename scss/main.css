@@ -11519,6 +11519,10 @@ body .mb-modal .modal-dialog {
 
 .banner--thumb {
   position: relative; }
+@media (max-width: 768px) {
+  .banner {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 .inner-form {
   position: absolute;
@@ -11709,6 +11713,10 @@ body .mb-modal .modal-dialog {
     .hp-highlights__info:hover {
       color: #5a420c; }
 
+.slick-slide:focus {
+  box-shadow: none;
+  outline: none; }
+
 .viewMore {
   display: inline-block;
   color: #4a7eb7; }
@@ -11810,19 +11818,26 @@ body .mb-modal .modal-dialog {
 .scrollToTop {
   width: 50px;
   height: 50px;
-  padding: 10px;
+  line-height: 60px;
   border-radius: 50%;
   text-align: center;
   background: #50a9d3;
   color: #fafafa;
   text-decoration: none;
   position: fixed;
-  bottom: 75px;
+  bottom: 30px;
   right: 40px; }
   .scrollToTop:hover {
     text-decoration: none;
     color: #fff;
     background-color: #5a420c; }
+  @media (max-width: 575px) {
+    .scrollToTop {
+      height: 30px;
+      width: 30px;
+      line-height: 30px; }
+      .scrollToTop .fa-2x {
+        font-size: 1em; } }
 
 .fade-in {
   opacity: 1;
@@ -11872,7 +11887,7 @@ body .mb-modal .modal-dialog {
 .slick-dotted.slick-slider {
   margin-bottom: 0 !important; }
 
-.form-control {
+.search-tl .form-control {
   background: transparent;
   border: 1px solid #dddddd;
   color: #ffffff; }
@@ -12191,19 +12206,13 @@ body .mb-modal .modal-dialog {
   outline: none;
   box-shadow: none;
   border: 1px solid #5a420c; }
-.post .form-group {
-  margin-bottom: 0; }
-  .post .form-group > label {
-    top: 16px;
-    left: 6px;
-    position: relative;
-    background-color: transparent;
-    padding: 0px 5px 0px 5px;
-    font-size: 0.9em; }
-  .post .form-group textarea {
-    resize: none; }
+.post .form-group textarea {
+  resize: none; }
 .post iframe {
   width: 100%; }
+
+body select {
+  appearance: auto !important; }
 
 .receive label {
   margin-bottom: 0; }

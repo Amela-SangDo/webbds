@@ -56,15 +56,6 @@
         }
     }
     .form-group {
-        margin-bottom: 0;
-        &>label {
-            top: 16px;
-            left: 6px;
-            position: relative;
-            background-color: transparent;
-            padding: 0px 5px 0px 5px;
-            font-size: 0.9em;
-        }
         textarea {
             resize: none;
         }
@@ -72,6 +63,10 @@
     iframe {
         width: 100%;
     }
+}
+
+body select {
+    appearance: auto !important;
 }
 
 .receive {
