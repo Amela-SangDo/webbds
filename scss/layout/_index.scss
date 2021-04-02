@@ -35,6 +35,10 @@
     &--thumb {
         position: relative;
     }
+    @media (max-width: 768px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .inner-form {
@@ -51,18 +55,18 @@
             }
         }
     }
-    
     @media (max-width: 768px) {
         display: none;
     }
 }
+
 .search-tl {
     margin: 0 auto;
     ul {
         line-height: 18px;
         display: flex;
         li {
-            .nav-link{
+            .nav-link {
                 min-width: 160px;
                 border-radius: 5px 5px 0 0;
                 font-size: 14px;
@@ -74,18 +78,18 @@
                 border: 1px solid #000000a6;
                 cursor: pointer;
                 &:hover,
-                &.active{
+                &.active {
                     background: #000000a6;
                     color: #fff;
                 }
             }
-            &:not(:last-child) .nav-link{
+            &:not(:last-child) .nav-link {
                 margin-right: 5px;
             }
-            
         }
     }
 }
+
 .select-option {
     background-color: #000000a6;
     border-radius: 0 5px 5px 5px;
@@ -275,6 +279,11 @@
     }
 }
 
+.slick-slide:focus {
+    box-shadow: none;
+    outline: none;
+}
+
 .viewMore {
     display: inline-block;
     color: #4a7eb7;
@@ -417,19 +426,27 @@
 .scrollToTop {
     width: 50px;
     height: 50px;
-    padding: 10px;
+    line-height: 60px;
     border-radius: 50%;
     text-align: center;
     background: #50a9d3;
     color: #fafafa;
     text-decoration: none;
     position: fixed;
-    bottom: 75px;
+    bottom: 30px;
     right: 40px;
     &:hover {
         text-decoration: none;
         color: #fff;
         background-color: $yellow1;
+    }
+    @media (max-width: 575px) {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        .fa-2x {
+            font-size: 1em;
+        }
     }
 }
 
@@ -497,12 +514,11 @@
     }
 }
 
-
 .slick-dotted.slick-slider {
     margin-bottom: 0 !important;
 }
 
-.form-control {
+.search-tl .form-control {
     background: transparent;
     border: 1px solid #dddddd;
     color: #ffffff;
