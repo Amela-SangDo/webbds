@@ -11386,8 +11386,11 @@ button:focus {
 
 .mb-input {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #00000014 !important; }
+  padding: 15px;
+  border: 1px solid #00000014 !important;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border-radius: 2px; }
 
 .mb-input :focus {
   border: 1px solid #00000014 !important; }
@@ -12030,7 +12033,8 @@ body .mb-modal .modal-dialog .modal-content :focus {
 
 .modal-fixed button {
   border-radius: 0;
-  width: 100%; }
+  width: 100%;
+  background-color: #3c9f10; }
 
 .duan .left a {
   border: 1px solid #cdd6dd;
