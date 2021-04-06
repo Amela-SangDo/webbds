@@ -532,5 +532,10 @@
         border-radius: 0;
         width: 100%;
         background-color: rgba(60, 159, 16, 1);
+        height: 50px;
     }
+}
+.form-control__select {
+    appearance: none !important;
+    background: url('../images/caret_down.png') 95% 50%  no-repeat;
 }
