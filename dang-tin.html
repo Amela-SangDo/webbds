@@ -79,7 +79,7 @@
                 </h1>
                 <div class="mb-header--right">
                     <span data-toggle="modal" data-target="#modal-search"><img src="images/search.svg" alt="" class="img-fluid"></span>
-                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    <span id="header__toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                 </div>
             </div>
             <div id="mySidenav" class="sidenav">
@@ -165,48 +165,45 @@
                                                 </div>
                                                 <div class="input-group input-group-lg mb-8">
                                                     <select name="choose" class="mb-input">
-                                              <option value="1">Nha ban</option>
-                                              <option value="2">Nha mat dat</option>
-                                              <option value="3">Trang trai</option>
-                                              <option value="4">Khu cong nghiep</option>
-                                          </select>
+                                                      <option value="1">Nha ban</option>
+                                                      <option value="2">Nha mat dat</option>
+                                                      <option value="3">Trang trai</option>
+                                                      <option value="4">Khu cong nghiep</option>
+                                                    </select>
                                                 </div>
                                                 <div class="input-group input-group-lg mb-8">
                                                     <select name="choose" class="mb-input">
-                                              <option value="1">Nha ban</option>
-                                              <option value="2">Nha mat dat</option>
-                                              <option value="3">Trang trai</option>
-                                              <option value="4">Khu cong nghiep</option>
-                                          </select>
+                                                      <option value="1">Nha ban</option>
+                                                      <option value="2">Nha mat dat</option>
+                                                      <option value="3">Trang trai</option>
+                                                      <option value="4">Khu cong nghiep</option>
+                                                    </select>
                                                 </div>
                                                 <div class="input-group input-group-lg mb-8">
                                                     <select name="choose" class="mb-input">
-                                              <option value="1">Nha ban</option>
-                                              <option value="2">Nha mat dat</option>
-                                              <option value="3">Trang trai</option>
-                                              <option value="4">Khu cong nghiep</option>
-                                          </select>
+                                                      <option value="1">Nha ban</option>
+                                                      <option value="2">Nha mat dat</option>
+                                                      <option value="3">Trang trai</option>
+                                                      <option value="4">Khu cong nghiep</option>
+                                                    </select>
                                                 </div>
                                                 <div class="input-group input-group-lg mb-8">
                                                     <select name="choose" class="mb-input">
-                                              <option value="1">Nha ban</option>
-                                              <option value="2">Nha mat dat</option>
-                                              <option value="3">Trang trai</option>
-                                              <option value="4">Khu cong nghiep</option>
-                                          </select>
+                                                      <option value="1">Nha ban</option>
+                                                      <option value="2">Nha mat dat</option>
+                                                      <option value="3">Trang trai</option>
+                                                      <option value="4">Khu cong nghiep</option>
+                                                    </select>
                                                 </div>
+                                            </div>
+                                            <div class="modal-fixed p-10">
+                                                <button type="button" class="btn btn-primary">Tìm kiếm</button>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-
                                     </div>
-
                                 </div>
                             </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Đóng</button>
-                            <button type="button" class="btn btn-primary">Tìm kiếm</button>
                         </div>
                     </div>
                 </div>
@@ -218,7 +215,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-sm-12 col-md-12 col-12">
-                    <div class="mt-30 mb-15">
+                    <div class="mt-30 mb-15 d-lg-block d-md-block d-none">
                         <div class="post-search d-sm-flex">
                             <div class="mlr-10 mb-10">
                                 <input type="text" name="keyword" class="form-control">
@@ -241,7 +238,7 @@
                         <span>ĐĂNG TIN RAO BÁN, CHO THUÊ NHÀ ĐẤT</span>
                     </div>
                     <div class="post">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-tabs mb-10" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
                             </li>

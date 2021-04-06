@@ -21,6 +21,15 @@ $(function() {
     df.text(txt)
     parent.find('[type="checkbox"]').prop('checked', false)
   })
+  document.addEventListener('click', function(event) {
+    const specifiedElement = document.getElementById('mySidenav');
+    if (!specifiedElement) return
+    const isClickInside = specifiedElement.contains(event.target);
+    if (!isClickInside && event.target.id != 'header__toggle') {
+      specifiedElement.style.width = "0";
+      document.body.style.backgroundColor = "white";
+    }
+  });
 })
 function openNav() {
   document.getElementById("mySidenav").style.width = "270px";
