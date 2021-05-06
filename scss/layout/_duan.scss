@@ -104,6 +104,12 @@
         }
     }
 }
+.search-fix {
+    position: fixed;
+    top: 58px;
+    width: 100%;
+    z-index: 999;
+}
 
 @media (max-width: 575px) {
     .danh-sach-du-an .item .col-sm-4 {
